@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Emission levels per sector </title>
+<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+<h2>Air Pollutant Peak Hour Analysis in the US</h2>
+
+<div class="dropdown-row">
+  <div>
+    <label>Year</label><br>
+    <select id="yearDropdown"></select>
+  </div>
+  <div>
+    <label>State</label><br>
+    <select id="stateDropdown"></select>
+  </div>
+  <div>
+    <label>City</label><br>
+    <select id="cityDropdown"></select>
+  </div>
+</div>
+
+<svg id="barplot" width="900" height="450"></svg>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="./script.js"></script>

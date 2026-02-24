@@ -1,0 +1,19 @@
+The scripts were developed on OS Windows 10
+
+1) Installed python version: python3.10.11 (https://www.python.org/downloads/windows/)
+
+2) Create python environment to run qiskit
+
+   python -m venv my_quantum-env
+
+3) Activate environment:
+
+   my_quantum_env\Scripts\activate
+
+4) Install the following libraries:
+
+   pip install qiskit==1.4.1
+   pip install matplotlib
+   pip install qiskit_aer==0.17.2
+   pip install qiskit_ibm_runtime == 0.43.1
+   pip install pylatexenc

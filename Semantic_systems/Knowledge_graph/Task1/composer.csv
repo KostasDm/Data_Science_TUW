@@ -1,0 +1,4 @@
+<http://example.org/music-ontology/Composer/1000>,"Stephen"^^xsd:string,"Davis_TheBest"^^xsd:string,"Stephen Davis"^^xsd:string
+<http://example.org/music-ontology/Composer/300001>,"Brent"^^xsd:string,"Green"^^xsd:string,"Brent Green"^^xsd:string
+<http://example.org/music-ontology/Composer/300002>,"Brandon"^^xsd:string,"Rodriguez"^^xsd:string,"Brandon Rodriguez"^^xsd:string
+<http://example.org/music-ontology/Composer/300003>,"Stephanie"^^xsd:string,"Harper"^^xsd:string,"Stephanie Harper"^^xsd:string

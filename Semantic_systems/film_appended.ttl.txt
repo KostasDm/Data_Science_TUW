@@ -1,0 +1,1851 @@
+@prefix : <http://semantics.id/ns/example/film#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+
+###############################################
+# Films with complete metadata from DBpedia
+###############################################
+
+dbr:Inception a :Film ;
+    rdfs:label "Inception"@en ;
+    :releaseYear "2010"^^xsd:integer ;
+    :duration "148"^^xsd:float ;
+    :budget "160000000"^^xsd:float ;
+    :hasDirector dbr:Christopher_Nolan ;
+    :hasFilmStudio dbr:Warner_Bros ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Thriller ;
+    :hasGenre dbr:Action ;
+    :hasActor dbr:Leonardo_DiCaprio ;
+    :hasActor dbr:Joseph_Gordon-Levitt ;
+    :hasActor dbr:Ellen_Page ;
+    :hasActor dbr:Tom_Hardy ;
+    :hasActor dbr:Marion_Cotillard ;
+    :hasActor dbr:Cillian_Murphy .
+
+dbr:The_Dark_Knight a :Film ;
+    rdfs:label "The Dark Knight"@en ;
+    :releaseYear "2008"^^xsd:integer ;
+    :duration "152"^^xsd:float ;
+    :budget "185000000"^^xsd:float ;
+    :hasDirector dbr:Christopher_Nolan ;
+    :hasFilmStudio dbr:Warner_Bros ;
+    :hasGenre dbr:Action ;
+    :hasGenre dbr:Crime ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Superhero ;
+    :hasActor dbr:Christian_Bale ;
+    :hasActor dbr:Heath_Ledger ;
+    :hasActor dbr:Aaron_Eckhart ;
+    :hasActor dbr:Michael_Caine ;
+    :hasActor dbr:Gary_Oldman ;
+    :hasActor dbr:Morgan_Freeman .
+
+dbr:Interstellar a :Film ;
+    rdfs:label "Interstellar"@en ;
+    :releaseYear "2014"^^xsd:integer ;
+    :duration "169"^^xsd:float ;
+    :budget "165000000"^^xsd:float ;
+    :hasDirector dbr:Christopher_Nolan ;
+    :hasFilmStudio dbr:Paramount_Pictures ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Adventure ;
+    :hasActor dbr:Matthew_McConaughey ;
+    :hasActor dbr:Anne_Hathaway ;
+    :hasActor dbr:Jessica_Chastain ;
+    :hasActor dbr:Michael_Caine ;
+    :hasActor dbr:Matt_Damon .
+
+dbr:Dunkirk a :Film ;
+    rdfs:label "Dunkirk"@en ;
+    :releaseYear "2017"^^xsd:integer ;
+    :duration "106"^^xsd:float ;
+    :budget "100000000"^^xsd:float ;
+    :hasDirector dbr:Christopher_Nolan ;
+    :hasFilmStudio dbr:Warner_Bros ;
+    :hasGenre dbr:War ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Historical ;
+    :hasActor dbr:Fionn_Whitehead ;
+    :hasActor dbr:Tom_Hardy ;
+    :hasActor dbr:Mark_Rylance ;
+    :hasActor dbr:Kenneth_Branagh ;
+    :hasActor dbr:Cillian_Murphy ;
+    :hasActor dbr:Harry_Styles .
+
+dbr:The_Prestige a :Film ;
+    rdfs:label "The Prestige"@en ;
+    :releaseYear "2006"^^xsd:integer ;
+    :duration "130"^^xsd:float ;
+    :budget "40000000"^^xsd:float ;
+    :hasDirector dbr:Christopher_Nolan ;
+    :hasFilmStudio dbr:Buena_Vista_Pictures ;
+    :hasGenre dbr:Mystery ;
+    :hasGenre dbr:Thriller ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Christian_Bale ;
+    :hasActor dbr:Hugh_Jackman ;
+    :hasActor dbr:Scarlett_Johansson ;
+    :hasActor dbr:Michael_Caine ;
+    :hasActor dbr:David_Bowie .
+
+dbr:Pulp_Fiction a :Film ;
+    rdfs:label "Pulp Fiction"@en ;
+    :releaseYear "1994"^^xsd:integer ;
+    :duration "154"^^xsd:float ;
+    :budget "8000000"^^xsd:float ;
+    :hasDirector dbr:Quentin_Tarantino ;
+    :hasFilmStudio dbr:Miramax ;
+    :hasGenre dbr:Crime ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Thriller ;
+    :hasActor dbr:John_Travolta ;
+    :hasActor dbr:Samuel_L_Jackson ;
+    :hasActor dbr:Uma_Thurman ;
+    :hasActor dbr:Bruce_Willis ;
+    :hasActor dbr:Tim_Roth ;
+    :hasActor dbr:Harvey_Keitel .
+
+dbr:Django_Unchained a :Film ;
+    rdfs:label "Django Unchained"@en ;
+    :releaseYear "2012"^^xsd:integer ;
+    :duration "165"^^xsd:float ;
+    :budget "100000000"^^xsd:float ;
+    :hasDirector dbr:Quentin_Tarantino ;
+    :hasFilmStudio dbr:The_Weinstein_Company ;
+    :hasGenre dbr:Western ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Action ;
+    :hasActor dbr:Jamie_Foxx ;
+    :hasActor dbr:Christoph_Waltz ;
+    :hasActor dbr:Leonardo_DiCaprio ;
+    :hasActor dbr:Kerry_Washington ;
+    :hasActor dbr:Samuel_L_Jackson .
+
+dbr:Inglourious_Basterds a :Film ;
+    rdfs:label "Inglourious Basterds"@en ;
+    :releaseYear "2009"^^xsd:integer ;
+    :duration "153"^^xsd:float ;
+    :budget "70000000"^^xsd:float ;
+    :hasDirector dbr:Quentin_Tarantino ;
+    :hasFilmStudio dbr:Universal_Pictures ;
+    :hasGenre dbr:War ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Adventure ;
+    :hasActor dbr:Brad_Pitt ;
+    :hasActor dbr:Christoph_Waltz ;
+    :hasActor dbr:Michael_Fassbender ;
+    :hasActor dbr:Eli_Roth ;
+    :hasActor dbr:Diane_Kruger .
+
+dbr:Kill_Bill_Volume_1 a :Film ;
+    rdfs:label "Kill Bill Volume 1"@en ;
+    :releaseYear "2003"^^xsd:integer ;
+    :duration "111"^^xsd:float ;
+    :budget "30000000"^^xsd:float ;
+    :hasDirector dbr:Quentin_Tarantino ;
+    :hasFilmStudio dbr:Miramax ;
+    :hasGenre dbr:Action ;
+    :hasGenre dbr:Thriller ;
+    :hasGenre dbr:Crime ;
+    :hasActor dbr:Uma_Thurman ;
+    :hasActor dbr:Lucy_Liu ;
+    :hasActor dbr:Vivica_A_Fox ;
+    :hasActor dbr:David_Carradine ;
+    :hasActor dbr:Daryl_Hannah .
+
+dbr:Reservoir_Dogs a :Film ;
+    rdfs:label "Reservoir Dogs"@en ;
+    :releaseYear "1992"^^xsd:integer ;
+    :duration "99"^^xsd:float ;
+    :budget "1200000"^^xsd:float ;
+    :hasDirector dbr:Quentin_Tarantino ;
+    :hasFilmStudio dbr:Miramax ;
+    :hasGenre dbr:Crime ;
+    :hasGenre dbr:Thriller ;
+    :hasActor dbr:Harvey_Keitel ;
+    :hasActor dbr:Tim_Roth ;
+    :hasActor dbr:Michael_Madsen ;
+    :hasActor dbr:Steve_Buscemi ;
+    :hasActor dbr:Chris_Penn .
+
+dbr:Schindlers_List a :Film ;
+    rdfs:label "Schindlers List"@en ;
+    :releaseYear "1993"^^xsd:integer ;
+    :duration "195"^^xsd:float ;
+    :budget "22000000"^^xsd:float ;
+    :hasDirector dbr:Steven_Spielberg ;
+    :hasFilmStudio dbr:Universal_Pictures ;
+    :hasGenre dbr:Biography ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Historical ;
+    :hasGenre dbr:War ;
+    :hasActor dbr:Liam_Neeson ;
+    :hasActor dbr:Ben_Kingsley ;
+    :hasActor dbr:Ralph_Fiennes ;
+    :hasActor dbr:Caroline_Goodall ;
+    :hasActor dbr:Jonathan_Sagall .
+
+dbr:Jurassic_Park a :Film ;
+    rdfs:label "Jurassic Park"@en ;
+    :releaseYear "1993"^^xsd:integer ;
+    :duration "127"^^xsd:float ;
+    :budget "63000000"^^xsd:float ;
+    :hasDirector dbr:Steven_Spielberg ;
+    :hasFilmStudio dbr:Universal_Pictures ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Adventure ;
+    :hasGenre dbr:Thriller ;
+    :hasActor dbr:Sam_Neill ;
+    :hasActor dbr:Laura_Dern ;
+    :hasActor dbr:Jeff_Goldblum ;
+    :hasActor dbr:Richard_Attenborough ;
+    :hasActor dbr:Samuel_L_Jackson .
+
+dbr:Saving_Private_Ryan a :Film ;
+    rdfs:label "Saving Private Ryan"@en ;
+    :releaseYear "1998"^^xsd:integer ;
+    :duration "169"^^xsd:float ;
+    :budget "70000000"^^xsd:float ;
+    :hasDirector dbr:Steven_Spielberg ;
+    :hasFilmStudio dbr:DreamWorks ;
+    :hasGenre dbr:War ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Action ;
+    :hasActor dbr:Tom_Hanks ;
+    :hasActor dbr:Matt_Damon ;
+    :hasActor dbr:Tom_Sizemore ;
+    :hasActor dbr:Edward_Burns ;
+    :hasActor dbr:Barry_Pepper .
+
+dbr:E.T._the_Extra-Terrestrial a :Film ;
+    rdfs:label "E.T. the Extra-Terrestrial"@en ;
+    :releaseYear "1982"^^xsd:integer ;
+    :duration "115"^^xsd:float ;
+    :budget "10500000"^^xsd:float ;
+    :hasDirector dbr:Steven_Spielberg ;
+    :hasFilmStudio dbr:Universal_Pictures ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Family ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Henry_Thomas ;
+    :hasActor dbr:Drew_Barrymore ;
+    :hasActor dbr:Robert_MacNaughton ;
+    :hasActor dbr:Dee_Wallace .
+
+dbr:Raiders_of_the_Lost_Ark a :Film ;
+    rdfs:label "Raiders of the Lost Ark"@en ;
+    :releaseYear "1981"^^xsd:integer ;
+    :duration "115"^^xsd:float ;
+    :budget "20000000"^^xsd:float ;
+    :hasDirector dbr:Steven_Spielberg ;
+    :hasFilmStudio dbr:Paramount_Pictures ;
+    :hasGenre dbr:Action ;
+    :hasGenre dbr:Adventure ;
+    :hasActor dbr:Harrison_Ford ;
+    :hasActor dbr:Karen_Allen ;
+    :hasActor dbr:Paul_Freeman ;
+    :hasActor dbr:Ronald_Lacey ;
+    :hasActor dbr:John_Rhys-Davies .
+
+dbr:The_Departed a :Film ;
+    rdfs:label "The Departed"@en ;
+    :releaseYear "2006"^^xsd:integer ;
+    :duration "151"^^xsd:float ;
+    :budget "90000000"^^xsd:float ;
+    :hasDirector dbr:Martin_Scorsese ;
+    :hasFilmStudio dbr:Warner_Bros ;
+    :hasGenre dbr:Crime ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Thriller ;
+    :hasActor dbr:Leonardo_DiCaprio ;
+    :hasActor dbr:Matt_Damon ;
+    :hasActor dbr:Jack_Nicholson ;
+    :hasActor dbr:Mark_Wahlberg ;
+    :hasActor dbr:Martin_Sheen ;
+    :hasActor dbr:Alec_Baldwin .
+
+dbr:Goodfellas a :Film ;
+    rdfs:label "Goodfellas"@en ;
+    :releaseYear "1990"^^xsd:integer ;
+    :duration "145"^^xsd:float ;
+    :budget "25000000"^^xsd:float ;
+    :hasDirector dbr:Martin_Scorsese ;
+    :hasFilmStudio dbr:Warner_Bros ;
+    :hasGenre dbr:Crime ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Biography ;
+    :hasActor dbr:Robert_De_Niro ;
+    :hasActor dbr:Ray_Liotta ;
+    :hasActor dbr:Joe_Pesci ;
+    :hasActor dbr:Lorraine_Bracco ;
+    :hasActor dbr:Paul_Sorvino .
+
+dbr:The_Wolf_of_Wall_Street a :Film ;
+    rdfs:label "The Wolf of Wall Street"@en ;
+    :releaseYear "2013"^^xsd:integer ;
+    :duration "180"^^xsd:float ;
+    :budget "100000000"^^xsd:float ;
+    :hasDirector dbr:Martin_Scorsese ;
+    :hasFilmStudio dbr:Paramount_Pictures ;
+    :hasGenre dbr:Biography ;
+    :hasGenre dbr:Comedy ;
+    :hasGenre dbr:Crime ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Leonardo_DiCaprio ;
+    :hasActor dbr:Jonah_Hill ;
+    :hasActor dbr:Margot_Robbie ;
+    :hasActor dbr:Matthew_McConaughey ;
+    :hasActor dbr:Kyle_Chandler .
+
+dbr:Taxi_Driver a :Film ;
+    rdfs:label "Taxi Driver"@en ;
+    :releaseYear "1976"^^xsd:integer ;
+    :duration "114"^^xsd:float ;
+    :budget "1300000"^^xsd:float ;
+    :hasDirector dbr:Martin_Scorsese ;
+    :hasFilmStudio dbr:Columbia_Pictures ;
+    :hasGenre dbr:Crime ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Robert_De_Niro ;
+    :hasActor dbr:Jodie_Foster ;
+    :hasActor dbr:Cybill_Shepherd ;
+    :hasActor dbr:Harvey_Keitel ;
+    :hasActor dbr:Peter_Boyle .
+
+dbr:Shutter_Island a :Film ;
+    rdfs:label "Shutter Island"@en ;
+    :releaseYear "2010"^^xsd:integer ;
+    :duration "138"^^xsd:float ;
+    :budget "80000000"^^xsd:float ;
+    :hasDirector dbr:Martin_Scorsese ;
+    :hasFilmStudio dbr:Paramount_Pictures ;
+    :hasGenre dbr:Mystery ;
+    :hasGenre dbr:Thriller ;
+    :hasGenre dbr:Psychological ;
+    :hasActor dbr:Leonardo_DiCaprio ;
+    :hasActor dbr:Mark_Ruffalo ;
+    :hasActor dbr:Ben_Kingsley ;
+    :hasActor dbr:Michelle_Williams ;
+    :hasActor dbr:Emily_Mortimer .
+
+dbr:The_Godfather a :Film ;
+    rdfs:label "The Godfather"@en ;
+    :releaseYear "1972"^^xsd:integer ;
+    :duration "175"^^xsd:float ;
+    :budget "6000000"^^xsd:float ;
+    :hasDirector dbr:Francis_Ford_Coppola ;
+    :hasFilmStudio dbr:Paramount_Pictures ;
+    :hasGenre dbr:Crime ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Marlon_Brando ;
+    :hasActor dbr:Al_Pacino ;
+    :hasActor dbr:James_Caan ;
+    :hasActor dbr:Robert_Duvall ;
+    :hasActor dbr:Diane_Keaton .
+
+dbr:The_Godfather_Part_II a :Film ;
+    rdfs:label "The Godfather Part II"@en ;
+    :releaseYear "1974"^^xsd:integer ;
+    :duration "202"^^xsd:float ;
+    :budget "13000000"^^xsd:float ;
+    :hasDirector dbr:Francis_Ford_Coppola ;
+    :hasFilmStudio dbr:Paramount_Pictures ;
+    :hasGenre dbr:Crime ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Al_Pacino ;
+    :hasActor dbr:Robert_De_Niro ;
+    :hasActor dbr:Robert_Duvall ;
+    :hasActor dbr:Diane_Keaton ;
+    :hasActor dbr:John_Cazale .
+
+dbr:Apocalypse_Now a :Film ;
+    rdfs:label "Apocalypse Now"@en ;
+    :releaseYear "1979"^^xsd:integer ;
+    :duration "147"^^xsd:float ;
+    :budget "31000000"^^xsd:float ;
+    :hasDirector dbr:Francis_Ford_Coppola ;
+    :hasFilmStudio dbr:United_Artists ;
+    :hasGenre dbr:War ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Martin_Sheen ;
+    :hasActor dbr:Marlon_Brando ;
+    :hasActor dbr:Robert_Duvall ;
+    :hasActor dbr:Frederic_Forrest ;
+    :hasActor dbr:Dennis_Hopper .
+
+dbr:The_Shawshank_Redemption a :Film ;
+    rdfs:label "The Shawshank Redemption"@en ;
+    :releaseYear "1994"^^xsd:integer ;
+    :duration "142"^^xsd:float ;
+    :budget "25000000"^^xsd:float ;
+    :hasDirector dbr:Frank_Darabont ;
+    :hasFilmStudio dbr:Columbia_Pictures ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Tim_Robbins ;
+    :hasActor dbr:Morgan_Freeman ;
+    :hasActor dbr:Bob_Gunton ;
+    :hasActor dbr:William_Sadler ;
+    :hasActor dbr:Clancy_Brown .
+
+dbr:The_Green_Mile a :Film ;
+    rdfs:label "The Green Mile"@en ;
+    :releaseYear "1999"^^xsd:integer ;
+    :duration "189"^^xsd:float ;
+    :budget "60000000"^^xsd:float ;
+    :hasDirector dbr:Frank_Darabont ;
+    :hasFilmStudio dbr:Warner_Bros ;
+    :hasGenre dbr:Crime ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Fantasy ;
+    :hasActor dbr:Tom_Hanks ;
+    :hasActor dbr:David_Morse ;
+    :hasActor dbr:Michael_Clarke_Duncan ;
+    :hasActor dbr:Bonnie_Hunt ;
+    :hasActor dbr:Sam_Rockwell .
+
+dbr:The_Lord_of_the_Rings_The_Fellowship_of_the_Ring a :Film ;
+    rdfs:label "The Lord of the Rings The Fellowship of the Ring"@en ;
+    :releaseYear "2001"^^xsd:integer ;
+    :duration "178"^^xsd:float ;
+    :budget "93000000"^^xsd:float ;
+    :hasDirector dbr:Peter_Jackson ;
+    :hasFilmStudio dbr:New_Line_Cinema ;
+    :hasGenre dbr:Fantasy ;
+    :hasGenre dbr:Adventure ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Elijah_Wood ;
+    :hasActor dbr:Ian_McKellen ;
+    :hasActor dbr:Viggo_Mortensen ;
+    :hasActor dbr:Sean_Astin ;
+    :hasActor dbr:Cate_Blanchett ;
+    :hasActor dbr:Orlando_Bloom .
+
+dbr:The_Lord_of_the_Rings_The_Two_Towers a :Film ;
+    rdfs:label "The Lord of the Rings The Two Towers"@en ;
+    :releaseYear "2002"^^xsd:integer ;
+    :duration "179"^^xsd:float ;
+    :budget "94000000"^^xsd:float ;
+    :hasDirector dbr:Peter_Jackson ;
+    :hasFilmStudio dbr:New_Line_Cinema ;
+    :hasGenre dbr:Fantasy ;
+    :hasGenre dbr:Adventure ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Elijah_Wood ;
+    :hasActor dbr:Ian_McKellen ;
+    :hasActor dbr:Viggo_Mortensen ;
+    :hasActor dbr:Sean_Astin ;
+    :hasActor dbr:Andy_Serkis ;
+    :hasActor dbr:Orlando_Bloom .
+
+dbr:The_Lord_of_the_Rings_The_Return_of_the_King a :Film ;
+    rdfs:label "The Lord of the Rings The Return of the King"@en ;
+    :releaseYear "2003"^^xsd:integer ;
+    :duration "201"^^xsd:float ;
+    :budget "94000000"^^xsd:float ;
+    :hasDirector dbr:Peter_Jackson ;
+    :hasFilmStudio dbr:New_Line_Cinema ;
+    :hasGenre dbr:Fantasy ;
+    :hasGenre dbr:Adventure ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Elijah_Wood ;
+    :hasActor dbr:Ian_McKellen ;
+    :hasActor dbr:Viggo_Mortensen ;
+    :hasActor dbr:Sean_Astin ;
+    :hasActor dbr:Andy_Serkis ;
+    :hasActor dbr:Orlando_Bloom .
+
+dbr:King_Kong a :Film ;
+    rdfs:label "King Kong"@en ;
+    :releaseYear "2005"^^xsd:integer ;
+    :duration "187"^^xsd:float ;
+    :budget "207000000"^^xsd:float ;
+    :hasDirector dbr:Peter_Jackson ;
+    :hasFilmStudio dbr:Universal_Pictures ;
+    :hasGenre dbr:Adventure ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Romance ;
+    :hasActor dbr:Naomi_Watts ;
+    :hasActor dbr:Jack_Black ;
+    :hasActor dbr:Adrien_Brody ;
+    :hasActor dbr:Thomas_Kretschmann ;
+    :hasActor dbr:Colin_Hanks .
+
+dbr:Fight_Club a :Film ;
+    rdfs:label "Fight Club"@en ;
+    :releaseYear "1999"^^xsd:integer ;
+    :duration "139"^^xsd:float ;
+    :budget "63000000"^^xsd:float ;
+    :hasDirector dbr:David_Fincher ;
+    :hasFilmStudio dbr:20th_Century_Fox ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Thriller ;
+    :hasActor dbr:Brad_Pitt ;
+    :hasActor dbr:Edward_Norton ;
+    :hasActor dbr:Helena_Bonham_Carter ;
+    :hasActor dbr:Meat_Loaf ;
+    :hasActor dbr:Jared_Leto .
+
+dbr:The_Social_Network a :Film ;
+    rdfs:label "The Social Network"@en ;
+    :releaseYear "2010"^^xsd:integer ;
+    :duration "120"^^xsd:float ;
+    :budget "40000000"^^xsd:float ;
+    :hasDirector dbr:David_Fincher ;
+    :hasFilmStudio dbr:Columbia_Pictures ;
+    :hasGenre dbr:Biography ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Jesse_Eisenberg ;
+    :hasActor dbr:Andrew_Garfield ;
+    :hasActor dbr:Justin_Timberlake ;
+    :hasActor dbr:Armie_Hammer ;
+    :hasActor dbr:Max_Minghella .
+
+dbr:Se7en a :Film ;
+    rdfs:label "Se7en"@en ;
+    :releaseYear "1995"^^xsd:integer ;
+    :duration "127"^^xsd:float ;
+    :budget "33000000"^^xsd:float ;
+    :hasDirector dbr:David_Fincher ;
+    :hasFilmStudio dbr:New_Line_Cinema ;
+    :hasGenre dbr:Crime ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Mystery ;
+    :hasGenre dbr:Thriller ;
+    :hasActor dbr:Morgan_Freeman ;
+    :hasActor dbr:Brad_Pitt ;
+    :hasActor dbr:Gwyneth_Paltrow ;
+    :hasActor dbr:Kevin_Spacey ;
+    :hasActor dbr:R._Lee_Ermey .
+
+dbr:Gone_Girl a :Film ;
+    rdfs:label "Gone Girl"@en ;
+    :releaseYear "2014"^^xsd:integer ;
+    :duration "149"^^xsd:float ;
+    :budget "61000000"^^xsd:float ;
+    :hasDirector dbr:David_Fincher ;
+    :hasFilmStudio dbr:20th_Century_Fox ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Mystery ;
+    :hasGenre dbr:Thriller ;
+    :hasActor dbr:Ben_Affleck ;
+    :hasActor dbr:Rosamund_Pike ;
+    :hasActor dbr:Neil_Patrick_Harris ;
+    :hasActor dbr:Tyler_Perry ;
+    :hasActor dbr:Carrie_Coon .
+
+dbr:Gladiator a :Film ;
+    rdfs:label "Gladiator"@en ;
+    :releaseYear "2000"^^xsd:integer ;
+    :duration "155"^^xsd:float ;
+    :budget "103000000"^^xsd:float ;
+    :hasDirector dbr:Ridley_Scott ;
+    :hasFilmStudio dbr:DreamWorks ;
+    :hasGenre dbr:Action ;
+    :hasGenre dbr:Adventure ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Historical ;
+    :hasActor dbr:Russell_Crowe ;
+    :hasActor dbr:Joaquin_Phoenix ;
+    :hasActor dbr:Connie_Nielsen ;
+    :hasActor dbr:Oliver_Reed ;
+    :hasActor dbr:Derek_Jacobi .
+
+dbr:Blade_Runner a :Film ;
+    rdfs:label "Blade Runner"@en ;
+    :releaseYear "1982"^^xsd:integer ;
+    :duration "117"^^xsd:float ;
+    :budget "28000000"^^xsd:float ;
+    :hasDirector dbr:Ridley_Scott ;
+    :hasFilmStudio dbr:Warner_Bros ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Thriller ;
+    :hasActor dbr:Harrison_Ford ;
+    :hasActor dbr:Rutger_Hauer ;
+    :hasActor dbr:Sean_Young ;
+    :hasActor dbr:Edward_James_Olmos ;
+    :hasActor dbr:Daryl_Hannah .
+
+dbr:Alien a :Film ;
+    rdfs:label "Alien"@en ;
+    :releaseYear "1979"^^xsd:integer ;
+    :duration "117"^^xsd:float ;
+    :budget "11000000"^^xsd:float ;
+    :hasDirector dbr:Ridley_Scott ;
+    :hasFilmStudio dbr:20th_Century_Fox ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Horror ;
+    :hasActor dbr:Sigourney_Weaver ;
+    :hasActor dbr:Tom_Skerritt ;
+    :hasActor dbr:John_Hurt ;
+    :hasActor dbr:Veronica_Cartwright ;
+    :hasActor dbr:Harry_Dean_Stanton .
+
+dbr:The_Martian a :Film ;
+    rdfs:label "The Martian"@en ;
+    :releaseYear "2015"^^xsd:integer ;
+    :duration "144"^^xsd:float ;
+    :budget "108000000"^^xsd:float ;
+    :hasDirector dbr:Ridley_Scott ;
+    :hasFilmStudio dbr:20th_Century_Fox ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Adventure ;
+    :hasActor dbr:Matt_Damon ;
+    :hasActor dbr:Jessica_Chastain ;
+    :hasActor dbr:Kristen_Wiig ;
+    :hasActor dbr:Jeff_Daniels ;
+    :hasActor dbr:Michael_Peña .
+
+dbr:The_Matrix a :Film ;
+    rdfs:label "The Matrix"@en ;
+    :releaseYear "1999"^^xsd:integer ;
+    :duration "136"^^xsd:float ;
+    :budget "63000000"^^xsd:float ;
+    :hasDirector dbr:Lana_Wachowski ;
+    :hasFilmStudio dbr:Warner_Bros ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Action ;
+    :hasActor dbr:Keanu_Reeves ;
+    :hasActor dbr:Laurence_Fishburne ;
+    :hasActor dbr:Carrie-Anne_Moss ;
+    :hasActor dbr:Hugo_Weaving ;
+    :hasActor dbr:Joe_Pantoliano .
+
+dbr:The_Matrix_Reloaded a :Film ;
+    rdfs:label "The Matrix Reloaded"@en ;
+    :releaseYear "2003"^^xsd:integer ;
+    :duration "138"^^xsd:float ;
+    :budget "150000000"^^xsd:float ;
+    :hasDirector dbr:Lana_Wachowski ;
+    :hasFilmStudio dbr:Warner_Bros ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Action ;
+    :hasActor dbr:Keanu_Reeves ;
+    :hasActor dbr:Laurence_Fishburne ;
+    :hasActor dbr:Carrie-Anne_Moss ;
+    :hasActor dbr:Hugo_Weaving ;
+    :hasActor dbr:Jada_Pinkett_Smith .
+
+dbr:Forrest_Gump a :Film ;
+    rdfs:label "Forrest Gump"@en ;
+    :releaseYear "1994"^^xsd:integer ;
+    :duration "142"^^xsd:float ;
+    :budget "55000000"^^xsd:float ;
+    :hasDirector dbr:Robert_Zemeckis ;
+    :hasFilmStudio dbr:Paramount_Pictures ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Romance ;
+    :hasActor dbr:Tom_Hanks ;
+    :hasActor dbr:Robin_Wright ;
+    :hasActor dbr:Gary_Sinise ;
+    :hasActor dbr:Mykelti_Williamson ;
+    :hasActor dbr:Sally_Field .
+
+dbr:Back_to_the_Future a :Film ;
+    rdfs:label "Back to the Future"@en ;
+    :releaseYear "1985"^^xsd:integer ;
+    :duration "116"^^xsd:float ;
+    :budget "19000000"^^xsd:float ;
+    :hasDirector dbr:Robert_Zemeckis ;
+    :hasFilmStudio dbr:Universal_Pictures ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Adventure ;
+    :hasGenre dbr:Comedy ;
+    :hasActor dbr:Michael_J_Fox ;
+    :hasActor dbr:Christopher_Lloyd ;
+    :hasActor dbr:Lea_Thompson ;
+    :hasActor dbr:Crispin_Glover ;
+    :hasActor dbr:Thomas_F_Wilson .
+
+dbr:Cast_Away a :Film ;
+    rdfs:label "Cast Away"@en ;
+    :releaseYear "2000"^^xsd:integer ;
+    :duration "143"^^xsd:float ;
+    :budget "90000000"^^xsd:float ;
+    :hasDirector dbr:Robert_Zemeckis ;
+    :hasFilmStudio dbr:20th_Century_Fox ;
+    :hasGenre dbr:Adventure ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Romance ;
+    :hasActor dbr:Tom_Hanks ;
+    :hasActor dbr:Helen_Hunt ;
+    :hasActor dbr:Nick_Searcy ;
+    :hasActor dbr:Christopher_Noth .
+
+dbr:Titanic a :Film ;
+    rdfs:label "Titanic"@en ;
+    :releaseYear "1997"^^xsd:integer ;
+    :duration "194"^^xsd:float ;
+    :budget "200000000"^^xsd:float ;
+    :hasDirector dbr:James_Cameron ;
+    :hasFilmStudio dbr:Paramount_Pictures ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Romance ;
+    :hasGenre dbr:Historical ;
+    :hasActor dbr:Leonardo_DiCaprio ;
+    :hasActor dbr:Kate_Winslet ;
+    :hasActor dbr:Billy_Zane ;
+    :hasActor dbr:Kathy_Bates ;
+    :hasActor dbr:Frances_Fisher .
+
+dbr:Avatar a :Film ;
+    rdfs:label "Avatar"@en ;
+    :releaseYear "2009"^^xsd:integer ;
+    :duration "162"^^xsd:float ;
+    :budget "237000000"^^xsd:float ;
+    :hasDirector dbr:James_Cameron ;
+    :hasFilmStudio dbr:20th_Century_Fox ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Action ;
+    :hasGenre dbr:Adventure ;
+    :hasActor dbr:Sam_Worthington ;
+    :hasActor dbr:Zoe_Saldana ;
+    :hasActor dbr:Sigourney_Weaver ;
+    :hasActor dbr:Stephen_Lang ;
+    :hasActor dbr:Michelle_Rodriguez .
+
+dbr:Terminator_2_Judgment_Day a :Film ;
+    rdfs:label "Terminator 2 Judgment Day"@en ;
+    :releaseYear "1991"^^xsd:integer ;
+    :duration "137"^^xsd:float ;
+    :budget "102000000"^^xsd:float ;
+    :hasDirector dbr:James_Cameron ;
+    :hasFilmStudio dbr:TriStar_Pictures ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Action ;
+    :hasActor dbr:Arnold_Schwarzenegger ;
+    :hasActor dbr:Linda_Hamilton ;
+    :hasActor dbr:Edward_Furlong ;
+    :hasActor dbr:Robert_Patrick ;
+    :hasActor dbr:Earl_Boen .
+
+dbr:The_Terminator a :Film ;
+    rdfs:label "The Terminator"@en ;
+    :releaseYear "1984"^^xsd:integer ;
+    :duration "107"^^xsd:float ;
+    :budget "6400000"^^xsd:float ;
+    :hasDirector dbr:James_Cameron ;
+    :hasFilmStudio dbr:Orion_Pictures ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Action ;
+    :hasGenre dbr:Thriller ;
+    :hasActor dbr:Arnold_Schwarzenegger ;
+    :hasActor dbr:Michael_Biehn ;
+    :hasActor dbr:Linda_Hamilton ;
+    :hasActor dbr:Paul_Winfield .
+
+dbr:Aliens a :Film ;
+    rdfs:label "Aliens"@en ;
+    :releaseYear "1986"^^xsd:integer ;
+    :duration "137"^^xsd:float ;
+    :budget "18500000"^^xsd:float ;
+    :hasDirector dbr:James_Cameron ;
+    :hasFilmStudio dbr:20th_Century_Fox ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Action ;
+    :hasGenre dbr:Horror ;
+    :hasActor dbr:Sigourney_Weaver ;
+    :hasActor dbr:Michael_Biehn ;
+    :hasActor dbr:Paul_Reiser ;
+    :hasActor dbr:Lance_Henriksen ;
+    :hasActor dbr:Bill_Paxton .
+
+dbr:Blade_Runner_2049 a :Film ;
+    rdfs:label "Blade Runner 2049"@en ;
+    :releaseYear "2017"^^xsd:integer ;
+    :duration "164"^^xsd:float ;
+    :budget "150000000"^^xsd:float ;
+    :hasDirector dbr:Denis_Villeneuve ;
+    :hasFilmStudio dbr:Warner_Bros ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Thriller ;
+    :hasActor dbr:Ryan_Gosling ;
+    :hasActor dbr:Harrison_Ford ;
+    :hasActor dbr:Ana_de_Armas ;
+    :hasActor dbr:Sylvia_Hoeks ;
+    :hasActor dbr:Robin_Wright .
+
+dbr:Arrival a :Film ;
+    rdfs:label "Arrival"@en ;
+    :releaseYear "2016"^^xsd:integer ;
+    :duration "116"^^xsd:float ;
+    :budget "47000000"^^xsd:float ;
+    :hasDirector dbr:Denis_Villeneuve ;
+    :hasFilmStudio dbr:Paramount_Pictures ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Amy_Adams ;
+    :hasActor dbr:Jeremy_Renner ;
+    :hasActor dbr:Forest_Whitaker ;
+    :hasActor dbr:Michael_Stuhlbarg .
+
+dbr:Dune a :Film ;
+    rdfs:label "Dune"@en ;
+    :releaseYear "2021"^^xsd:integer ;
+    :duration "155"^^xsd:float ;
+    :budget "165000000"^^xsd:float ;
+    :hasDirector dbr:Denis_Villeneuve ;
+    :hasFilmStudio dbr:Warner_Bros ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Adventure ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Timothée_Chalamet ;
+    :hasActor dbr:Rebecca_Ferguson ;
+    :hasActor dbr:Oscar_Isaac ;
+    :hasActor dbr:Josh_Brolin ;
+    :hasActor dbr:Stellan_Skarsgård ;
+    :hasActor dbr:Zendaya .
+
+dbr:No_Country_for_Old_Men a :Film ;
+    rdfs:label "No Country for Old Men"@en ;
+    :releaseYear "2007"^^xsd:integer ;
+    :duration "122"^^xsd:float ;
+    :budget "25000000"^^xsd:float ;
+    :hasDirector dbr:Joel_Coen ;
+    :hasFilmStudio dbr:Miramax ;
+    :hasGenre dbr:Crime ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Thriller ;
+    :hasActor dbr:Tommy_Lee_Jones ;
+    :hasActor dbr:Javier_Bardem ;
+    :hasActor dbr:Josh_Brolin ;
+    :hasActor dbr:Woody_Harrelson ;
+    :hasActor dbr:Kelly_Macdonald .
+
+dbr:Fargo a :Film ;
+    rdfs:label "Fargo"@en ;
+    :releaseYear "1996"^^xsd:integer ;
+    :duration "98"^^xsd:float ;
+    :budget "7000000"^^xsd:float ;
+    :hasDirector dbr:Joel_Coen ;
+    :hasFilmStudio dbr:Gramercy_Pictures ;
+    :hasGenre dbr:Crime ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Thriller ;
+    :hasActor dbr:Frances_McDormand ;
+    :hasActor dbr:William_H_Macy ;
+    :hasActor dbr:Steve_Buscemi ;
+    :hasActor dbr:Peter_Stormare ;
+    :hasActor dbr:Harve_Presnell .
+
+dbr:The_Big_Lebowski a :Film ;
+    rdfs:label "The Big Lebowski"@en ;
+    :releaseYear "1998"^^xsd:integer ;
+    :duration "117"^^xsd:float ;
+    :budget "15000000"^^xsd:float ;
+    :hasDirector dbr:Joel_Coen ;
+    :hasFilmStudio dbr:Gramercy_Pictures ;
+    :hasGenre dbr:Comedy ;
+    :hasGenre dbr:Crime ;
+    :hasActor dbr:Jeff_Bridges ;
+    :hasActor dbr:John_Goodman ;
+    :hasActor dbr:Julianne_Moore ;
+    :hasActor dbr:Steve_Buscemi ;
+    :hasActor dbr:Philip_Seymour_Hoffman .
+
+dbr:The_Grand_Budapest_Hotel a :Film ;
+    rdfs:label "The Grand Budapest Hotel"@en ;
+    :releaseYear "2014"^^xsd:integer ;
+    :duration "99"^^xsd:float ;
+    :budget "25000000"^^xsd:float ;
+    :hasDirector dbr:Wes_Anderson ;
+    :hasFilmStudio dbr:Fox_Searchlight_Pictures ;
+    :hasGenre dbr:Adventure ;
+    :hasGenre dbr:Comedy ;
+    :hasGenre dbr:Crime ;
+    :hasActor dbr:Ralph_Fiennes ;
+    :hasActor dbr:Tony_Revolori ;
+    :hasActor dbr:F_Murray_Abraham ;
+    :hasActor dbr:Mathieu_Amalric ;
+    :hasActor dbr:Adrien_Brody .
+
+dbr:Moonrise_Kingdom a :Film ;
+    rdfs:label "Moonrise Kingdom"@en ;
+    :releaseYear "2012"^^xsd:integer ;
+    :duration "94"^^xsd:float ;
+    :budget "16000000"^^xsd:float ;
+    :hasDirector dbr:Wes_Anderson ;
+    :hasFilmStudio dbr:Focus_Features ;
+    :hasGenre dbr:Comedy ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Romance ;
+    :hasActor dbr:Jared_Gilman ;
+    :hasActor dbr:Kara_Hayward ;
+    :hasActor dbr:Bruce_Willis ;
+    :hasActor dbr:Edward_Norton ;
+    :hasActor dbr:Bill_Murray .
+
+dbr:The_Royal_Tenenbaums a :Film ;
+    rdfs:label "The Royal Tenenbaums"@en ;
+    :releaseYear "2001"^^xsd:integer ;
+    :duration "110"^^xsd:float ;
+    :budget "21000000"^^xsd:float ;
+    :hasDirector dbr:Wes_Anderson ;
+    :hasFilmStudio dbr:Buena_Vista_Pictures ;
+    :hasGenre dbr:Comedy ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Gene_Hackman ;
+    :hasActor dbr:Anjelica_Huston ;
+    :hasActor dbr:Ben_Stiller ;
+    :hasActor dbr:Gwyneth_Paltrow ;
+    :hasActor dbr:Luke_Wilson .
+
+dbr:Gravity a :Film ;
+    rdfs:label "Gravity"@en ;
+    :releaseYear "2013"^^xsd:integer ;
+    :duration "91"^^xsd:float ;
+    :budget "100000000"^^xsd:float ;
+    :hasDirector dbr:Alfonso_Cuarón ;
+    :hasFilmStudio dbr:Warner_Bros ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Thriller ;
+    :hasActor dbr:Sandra_Bullock ;
+    :hasActor dbr:George_Clooney ;
+    :hasActor dbr:Ed_Harris .
+
+dbr:Children_of_Men a :Film ;
+    rdfs:label "Children of Men"@en ;
+    :releaseYear "2006"^^xsd:integer ;
+    :duration "109"^^xsd:float ;
+    :budget "76000000"^^xsd:float ;
+    :hasDirector dbr:Alfonso_Cuarón ;
+    :hasFilmStudio dbr:Universal_Pictures ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Thriller ;
+    :hasActor dbr:Clive_Owen ;
+    :hasActor dbr:Julianne_Moore ;
+    :hasActor dbr:Michael_Caine ;
+    :hasActor dbr:Chiwetel_Ejiofor ;
+    :hasActor dbr:Charlie_Hunnam .
+
+dbr:Black_Swan a :Film ;
+    rdfs:label "Black Swan"@en ;
+    :releaseYear "2010"^^xsd:integer ;
+    :duration "108"^^xsd:float ;
+    :budget "13000000"^^xsd:float ;
+    :hasDirector dbr:Darren_Aronofsky ;
+    :hasFilmStudio dbr:Fox_Searchlight_Pictures ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Thriller ;
+    :hasGenre dbr:Psychological ;
+    :hasActor dbr:Natalie_Portman ;
+    :hasActor dbr:Mila_Kunis ;
+    :hasActor dbr:Vincent_Cassel ;
+    :hasActor dbr:Barbara_Hershey ;
+    :hasActor dbr:Winona_Ryder .
+
+dbr:Requiem_for_a_Dream a :Film ;
+    rdfs:label "Requiem for a Dream"@en ;
+    :releaseYear "2000"^^xsd:integer ;
+    :duration "102"^^xsd:float ;
+    :budget "4500000"^^xsd:float ;
+    :hasDirector dbr:Darren_Aronofsky ;
+    :hasFilmStudio dbr:Artisan_Entertainment ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Psychological ;
+    :hasActor dbr:Ellen_Burstyn ;
+    :hasActor dbr:Jared_Leto ;
+    :hasActor dbr:Jennifer_Connelly ;
+    :hasActor dbr:Marlon_Wayans .
+
+dbr:There_Will_Be_Blood a :Film ;
+    rdfs:label "There Will Be Blood"@en ;
+    :releaseYear "2007"^^xsd:integer ;
+    :duration "158"^^xsd:float ;
+    :budget "25000000"^^xsd:float ;
+    :hasDirector dbr:Paul_Thomas_Anderson ;
+    :hasFilmStudio dbr:Paramount_Vantage ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Daniel_Day-Lewis ;
+    :hasActor dbr:Paul_Dano ;
+    :hasActor dbr:Kevin_J_OConnor ;
+    :hasActor dbr:Ciarán_Hinds .
+
+dbr:Phantom_Thread a :Film ;
+    rdfs:label "Phantom Thread"@en ;
+    :releaseYear "2017"^^xsd:integer ;
+    :duration "130"^^xsd:float ;
+    :budget "35000000"^^xsd:float ;
+    :hasDirector dbr:Paul_Thomas_Anderson ;
+    :hasFilmStudio dbr:Focus_Features ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Romance ;
+    :hasActor dbr:Daniel_Day-Lewis ;
+    :hasActor dbr:Vicky_Krieps ;
+    :hasActor dbr:Lesley_Manville .
+
+dbr:Pans_Labyrinth a :Film ;
+    rdfs:label "Pans Labyrinth"@en ;
+    :releaseYear "2006"^^xsd:integer ;
+    :duration "118"^^xsd:float ;
+    :budget "19000000"^^xsd:float ;
+    :hasDirector dbr:Guillermo_del_Toro ;
+    :hasFilmStudio dbr:Warner_Bros ;
+    :hasGenre dbr:Fantasy ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:War ;
+    :hasActor dbr:Ivana_Baquero ;
+    :hasActor dbr:Sergi_López ;
+    :hasActor dbr:Maribel_Verdú ;
+    :hasActor dbr:Doug_Jones ;
+    :hasActor dbr:Ariadna_Gil .
+
+dbr:The_Shape_of_Water a :Film ;
+    rdfs:label "The Shape of Water"@en ;
+    :releaseYear "2017"^^xsd:integer ;
+    :duration "123"^^xsd:float ;
+    :budget "19500000"^^xsd:float ;
+    :hasDirector dbr:Guillermo_del_Toro ;
+    :hasFilmStudio dbr:Fox_Searchlight_Pictures ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Fantasy ;
+    :hasGenre dbr:Romance ;
+    :hasActor dbr:Sally_Hawkins ;
+    :hasActor dbr:Michael_Shannon ;
+    :hasActor dbr:Richard_Jenkins ;
+    :hasActor dbr:Doug_Jones ;
+    :hasActor dbr:Michael_Stuhlbarg .
+
+dbr:Parasite a :Film ;
+    rdfs:label "Parasite"@en ;
+    :releaseYear "2019"^^xsd:integer ;
+    :duration "132"^^xsd:float ;
+    :budget "11400000"^^xsd:float ;
+    :hasDirector dbr:Bong_Joon-ho ;
+    :hasFilmStudio dbr:CJ_Entertainment ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Thriller ;
+    :hasGenre dbr:Comedy ;
+    :hasActor dbr:Song_Kang-ho ;
+    :hasActor dbr:Lee_Sun-kyun ;
+    :hasActor dbr:Cho_Yeo-jeong ;
+    :hasActor dbr:Choi_Woo-shik ;
+    :hasActor dbr:Park_So-dam .
+
+dbr:Snowpiercer a :Film ;
+    rdfs:label "Snowpiercer"@en ;
+    :releaseYear "2013"^^xsd:integer ;
+    :duration "126"^^xsd:float ;
+    :budget "40000000"^^xsd:float ;
+    :hasDirector dbr:Bong_Joon-ho ;
+    :hasFilmStudio dbr:CJ_Entertainment ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Action ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Chris_Evans ;
+    :hasActor dbr:Song_Kang-ho ;
+    :hasActor dbr:Tilda_Swinton ;
+    :hasActor dbr:Jamie_Bell ;
+    :hasActor dbr:Octavia_Spencer .
+
+dbr:12_Angry_Men a :Film ;
+    rdfs:label "12 Angry Men"@en ;
+    :releaseYear "1957"^^xsd:integer ;
+    :duration "96"^^xsd:float ;
+    :budget "350000"^^xsd:float ;
+    :hasDirector dbr:Sidney_Lumet ;
+    :hasFilmStudio dbr:United_Artists ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Henry_Fonda ;
+    :hasActor dbr:Lee_J_Cobb ;
+    :hasActor dbr:Ed_Begley ;
+    :hasActor dbr:E_G_Marshall ;
+    :hasActor dbr:Jack_Warden .
+
+dbr:Casablanca a :Film ;
+    rdfs:label "Casablanca"@en ;
+    :releaseYear "1942"^^xsd:integer ;
+    :duration "102"^^xsd:float ;
+    :budget "1000000"^^xsd:float ;
+    :hasDirector dbr:Michael_Curtiz ;
+    :hasFilmStudio dbr:Warner_Bros ;
+    :hasGenre dbr:Drama ;
+    :hasGenre dbr:Romance ;
+    :hasGenre dbr:War ;
+    :hasActor dbr:Humphrey_Bogart ;
+    :hasActor dbr:Ingrid_Bergman ;
+    :hasActor dbr:Paul_Henreid ;
+    :hasActor dbr:Claude_Rains ;
+    :hasActor dbr:Conrad_Veidt .
+
+dbr:Psycho a :Film ;
+    rdfs:label "Psycho"@en ;
+    :releaseYear "1960"^^xsd:integer ;
+    :duration "109"^^xsd:float ;
+    :budget "806000"^^xsd:float ;
+    :hasDirector dbr:Alfred_Hitchcock ;
+    :hasFilmStudio dbr:Paramount_Pictures ;
+    :hasGenre dbr:Horror ;
+    :hasGenre dbr:Thriller ;
+    :hasGenre dbr:Mystery ;
+    :hasActor dbr:Anthony_Perkins ;
+    :hasActor dbr:Janet_Leigh ;
+    :hasActor dbr:Vera_Miles ;
+    :hasActor dbr:John_Gavin ;
+    :hasActor dbr:Martin_Balsam .
+
+dbr:Vertigo a :Film ;
+    rdfs:label "Vertigo"@en ;
+    :releaseYear "1958"^^xsd:integer ;
+    :duration "128"^^xsd:float ;
+    :budget "2500000"^^xsd:float ;
+    :hasDirector dbr:Alfred_Hitchcock ;
+    :hasFilmStudio dbr:Paramount_Pictures ;
+    :hasGenre dbr:Mystery ;
+    :hasGenre dbr:Romance ;
+    :hasGenre dbr:Thriller ;
+    :hasActor dbr:James_Stewart ;
+    :hasActor dbr:Kim_Novak ;
+    :hasActor dbr:Barbara_Bel_Geddes ;
+    :hasActor dbr:Tom_Helmore .
+
+dbr:Rear_Window a :Film ;
+    rdfs:label "Rear Window"@en ;
+    :releaseYear "1954"^^xsd:integer ;
+    :duration "112"^^xsd:float ;
+    :budget "1000000"^^xsd:float ;
+    :hasDirector dbr:Alfred_Hitchcock ;
+    :hasFilmStudio dbr:Paramount_Pictures ;
+    :hasGenre dbr:Mystery ;
+    :hasGenre dbr:Thriller ;
+    :hasActor dbr:James_Stewart ;
+    :hasActor dbr:Grace_Kelly ;
+    :hasActor dbr:Wendell_Corey ;
+    :hasActor dbr:Thelma_Ritter ;
+    :hasActor dbr:Raymond_Burr .
+
+dbr:Star_Wars a :Film ;
+    rdfs:label "Star Wars"@en ;
+    :releaseYear "1977"^^xsd:integer ;
+    :duration "121"^^xsd:float ;
+    :budget "11000000"^^xsd:float ;
+    :hasDirector dbr:George_Lucas ;
+    :hasFilmStudio dbr:20th_Century_Fox ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Action ;
+    :hasGenre dbr:Adventure ;
+    :hasActor dbr:Mark_Hamill ;
+    :hasActor dbr:Harrison_Ford ;
+    :hasActor dbr:Carrie_Fisher ;
+    :hasActor dbr:Peter_Cushing ;
+    :hasActor dbr:Alec_Guinness .
+
+dbr:The_Empire_Strikes_Back a :Film ;
+    rdfs:label "The Empire Strikes Back"@en ;
+    :releaseYear "1980"^^xsd:integer ;
+    :duration "124"^^xsd:float ;
+    :budget "18000000"^^xsd:float ;
+    :hasDirector dbr:Irvin_Kershner ;
+    :hasFilmStudio dbr:20th_Century_Fox ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Action ;
+    :hasGenre dbr:Adventure ;
+    :hasActor dbr:Mark_Hamill ;
+    :hasActor dbr:Harrison_Ford ;
+    :hasActor dbr:Carrie_Fisher ;
+    :hasActor dbr:Billy_Dee_Williams ;
+    :hasActor dbr:Frank_Oz .
+
+dbr:Return_of_the_Jedi a :Film ;
+    rdfs:label "Return of the Jedi"@en ;
+    :releaseYear "1983"^^xsd:integer ;
+    :duration "131"^^xsd:float ;
+    :budget "32500000"^^xsd:float ;
+    :hasDirector dbr:Richard_Marquand ;
+    :hasFilmStudio dbr:20th_Century_Fox ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Action ;
+    :hasGenre dbr:Adventure ;
+    :hasActor dbr:Mark_Hamill ;
+    :hasActor dbr:Harrison_Ford ;
+    :hasActor dbr:Carrie_Fisher ;
+    :hasActor dbr:Billy_Dee_Williams ;
+    :hasActor dbr:Anthony_Daniels .
+
+
+
+dbr:Independence_Day a :Film ;
+    rdfs:label "Independence Day"@en ;
+    :releaseYear "1996"^^xsd:integer ;
+    :duration "145"^^xsd:float ;
+    :budget "75000000"^^xsd:float ;
+    :hasDirector dbr:Roland_Emmerich ;
+    :hasFilmStudio dbr:20th_Century_Fox ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Action ;
+    :hasGenre dbr:Drama ;
+    :hasActor dbr:Will_Smith ;
+    :hasActor dbr:Jeff_Goldblum ;
+    :hasActor dbr:Bill_Pullman ;
+    :hasActor dbr:Mary_McDonnell ;
+    :hasActor dbr:Judd_Hirsch .
+
+
+dbr:Dune_1984 a :Film ;
+    rdfs:label "Dune (1984)"@en ;
+    :releaseYear "1984"^^xsd:integer ;
+    :duration "137"^^xsd:float ;
+    :budget "40000000"^^xsd:float ;
+    :hasDirector dbr:David_Lynch ;
+    :hasFilmStudio dbr:Universal_Pictures ;
+    :hasGenre dbr:Science_Fiction ;
+    :hasGenre dbr:Adventure ;
+    :hasActor dbr:Kyle_MacLachlan ;
+    :hasActor dbr:Francesca_Annis ;
+    :hasActor dbr:Max_von_Sydow .
+
+
+dbr:Roland_Emmerich a :Director , foaf:Person ;
+    rdfs:label "Roland Emmerich"@en ;
+    :fullName "Roland Emmerich" ;
+    :dateOfBirth "1955-11-10"^^xsd:date ;
+    :gender "male" .
+
+
+dbr:David_Lynch a :Director , foaf:Person ;
+    rdfs:label "David Lynch"@en ;
+    :fullName "David Lynch" ;
+    :dateOfBirth "1946-01-20"^^xsd:date ;
+    :gender "male" .
+
+
+dbr:Bill_Pullman a :Actor , foaf:Person ;
+    rdfs:label "Bill Pullman"@en ;
+    :fullName "Bill Pullman" ;
+    :dateOfBirth "1953-12-17"^^xsd:date ;
+    :gender "male" .
+
+dbr:Mary_McDonnell a :Actor , foaf:Person ;
+    rdfs:label "Mary McDonnell"@en ;
+    :fullName "Mary McDonnell" ;
+    :dateOfBirth "1952-04-28"^^xsd:date ;
+    :gender "female" .
+
+dbr:Judd_Hirsch a :Actor , foaf:Person ;
+    rdfs:label "Judd Hirsch"@en ;
+    :fullName "Judd Hirsch" ;
+    :dateOfBirth "1935-03-15"^^xsd:date ;
+    :gender "male" .
+
+
+dbr:Kyle_MacLachlan a :Actor , foaf:Person ;
+    rdfs:label "Kyle MacLachlan"@en ;
+    :fullName "Kyle MacLachlan" ;
+    :dateOfBirth "1959-02-22"^^xsd:date ;
+    :gender "male" .
+
+dbr:Francesca_Annis a :Actor , foaf:Person ;
+    rdfs:label "Francesca Annis"@en ;
+    :fullName "Francesca Annis" ;
+    :dateOfBirth "1945-05-14"^^xsd:date ;
+    :gender "female" .
+
+dbr:Max_von_Sydow a :Actor , foaf:Person ;
+    rdfs:label "Max von Sydow"@en ;
+    :fullName "Max von Sydow" ;
+    :dateOfBirth "1929-04-10"^^xsd:date ;
+    :gender "male" .
+
+
+# Add scriptwriters
+dbr:Christopher_Nolan a :ScriptWriter , foaf:Person .
+
+dbr:Quentin_Tarantino a :ScriptWriter , foaf:Person .
+
+dbr:Steven_Spielberg a :ScriptWriter , foaf:Person .
+
+dbr:James_Cameron a :ScriptWriter , foaf:Person .
+
+# Add composers
+dbr:Hans_Zimmer a :Composer , foaf:Person ;
+    rdfs:label "Hans Zimmer"@en ;
+    :fullName "Hans Zimmer" ;
+    :dateOfBirth "1957-09-12"^^xsd:date ;
+    :gender "male" .
+
+dbr:John_Williams a :Composer , foaf:Person ;
+    rdfs:label "John Williams"@en ;
+    :fullName "John Williams" ;
+    :dateOfBirth "1932-02-08"^^xsd:date ;
+    :gender "male" .
+
+dbr:Alan_Silvestri a :Composer , foaf:Person ;
+    rdfs:label "Alan Silvestri"@en ;
+    :fullName "Alan Silvestri" ;
+    :dateOfBirth "1950-03-26"^^xsd:date ;
+    :gender "male" .
+
+
+# Prequel/Sequel relationships
+dbr:The_Godfather_Part_II :prequel dbr:The_Godfather .
+dbr:The_Godfather_Part_II :sequel dbr:The_Godfather .
+
+dbr:The_Matrix_Reloaded :prequel dbr:The_Matrix .
+dbr:The_Matrix_Reloaded :sequel dbr:The_Matrix .
+
+dbr:The_Lord_of_the_Rings_The_Two_Towers :prequel dbr:The_Lord_of_the_Rings_The_Fellowship_of_the_Ring .
+dbr:The_Lord_of_the_Rings_The_Two_Towers :sequel dbr:The_Lord_of_the_Rings_The_Fellowship_of_the_Ring .
+
+dbr:The_Lord_of_the_Rings_The_Return_of_the_King :prequel dbr:The_Lord_of_the_Rings_The_Two_Towers .
+dbr:The_Lord_of_the_Rings_The_Return_of_the_King :sequel dbr:The_Lord_of_the_Rings_The_Two_Towers .
+
+dbr:The_Empire_Strikes_Back :prequel dbr:Star_Wars .
+dbr:The_Empire_Strikes_Back :sequel dbr:Star_Wars .
+
+dbr:Return_of_the_Jedi :prequel dbr:The_Empire_Strikes_Back .
+dbr:Return_of_the_Jedi :sequel dbr:The_Empire_Strikes_Back .
+
+dbr:Terminator_2_Judgment_Day :prequel dbr:The_Terminator .
+dbr:Terminator_2_Judgment_Day :sequel dbr:The_Terminator .
+
+dbr:Aliens :prequel dbr:Alien .
+dbr:Aliens :sequel dbr:Alien .
+
+dbr:Blade_Runner_2049 :prequel dbr:Blade_Runner .
+dbr:Blade_Runner_2049 :sequel dbr:Blade_Runner .
+
+dbr:Dune :prequel dbr:Dune_1984 .
+dbr:Dune :sequel dbr:Dune_1984 .
+
+
+# Add scriptwriter relationships
+dbr:Inception :hasScriptWriter dbr:Christopher_Nolan .
+dbr:The_Dark_Knight :hasScriptWriter dbr:Christopher_Nolan .
+dbr:Interstellar :hasScriptWriter dbr:Christopher_Nolan .
+
+dbr:Pulp_Fiction :hasScriptWriter dbr:Quentin_Tarantino .
+dbr:Django_Unchained :hasScriptWriter dbr:Quentin_Tarantino .
+
+dbr:Jurassic_Park :hasScriptWriter dbr:Steven_Spielberg .
+dbr:E.T._the_Extra-Terrestrial :hasScriptWriter dbr:Steven_Spielberg .
+
+dbr:Titanic :hasScriptWriter dbr:James_Cameron .
+dbr:Avatar :hasScriptWriter dbr:James_Cameron .
+
+# Add composer relationships
+dbr:Inception :hasComposer dbr:Hans_Zimmer .
+dbr:The_Dark_Knight :hasComposer dbr:Hans_Zimmer .
+dbr:Interstellar :hasComposer dbr:Hans_Zimmer .
+
+dbr:Jurassic_Park :hasComposer dbr:John_Williams .
+dbr:Star_Wars :hasComposer dbr:John_Williams .
+dbr:E.T._the_Extra-Terrestrial :hasComposer dbr:John_Williams .
+
+dbr:Back_to_the_Future :hasComposer dbr:Alan_Silvestri .
+dbr:Forrest_Gump :hasComposer dbr:Alan_Silvestri .
+
+###############################################
+# Directors (Persons)
+###############################################
+
+dbr:Christopher_Nolan a :Director , foaf:Person ;
+    rdfs:label "Christopher Nolan"@en ;
+    :fullName "Christopher Nolan" ;
+    :dateOfBirth "1970-07-30"^^xsd:date ;
+    :gender "male" .
+
+dbr:Quentin_Tarantino a :Director , foaf:Person ;
+    rdfs:label "Quentin Tarantino"@en ;
+    :fullName "Quentin Tarantino" ;
+    :dateOfBirth "1963-03-27"^^xsd:date ;
+    :gender "male" .
+
+dbr:Steven_Spielberg a :Director , foaf:Person ;
+    rdfs:label "Steven Spielberg"@en ;
+    :fullName "Steven Spielberg" ;
+    :dateOfBirth "1946-12-18"^^xsd:date ;
+    :gender "male" .
+
+dbr:Martin_Scorsese a :Director , foaf:Person ;
+    rdfs:label "Martin Scorsese"@en ;
+    :fullName "Martin Scorsese" ;
+    :dateOfBirth "1942-11-17"^^xsd:date ;
+    :gender "male" .
+
+dbr:Francis_Ford_Coppola a :Director , foaf:Person ;
+    rdfs:label "Francis_Ford Coppola"@en ;
+    :fullName "Francis_Ford Coppola" ;
+    :dateOfBirth "1939-04-07"^^xsd:date ;
+    :gender "male" .
+
+dbr:Frank_Darabont a :Director , foaf:Person ;
+    rdfs:label "Frank Darabont"@en ;
+    :fullName "Frank Darabont" ;
+    :dateOfBirth "1959-01-28"^^xsd:date ;
+    :gender "male" .
+
+dbr:Peter_Jackson a :Director , foaf:Person ;
+    rdfs:label "Peter Jackson"@en ;
+    :fullName "Peter Jackson" ;
+    :dateOfBirth "1961-10-31"^^xsd:date ;
+    :gender "male" .
+
+dbr:David_Fincher a :Director , foaf:Person ;
+    rdfs:label "David Fincher"@en ;
+    :fullName "David Fincher" ;
+    :dateOfBirth "1962-08-28"^^xsd:date ;
+    :gender "male" .
+
+dbr:Ridley_Scott a :Director , foaf:Person ;
+    rdfs:label "Ridley Scott"@en ;
+    :fullName "Ridley Scott" ;
+    :dateOfBirth "1937-11-30"^^xsd:date ;
+    :gender "male" .
+
+dbr:Lana_Wachowski a :Director , foaf:Person ;
+    rdfs:label "Lana Wachowski"@en ;
+    :fullName "Lana Wachowski" ;
+    :dateOfBirth "1965-06-21"^^xsd:date ;
+    :gender "female" .
+
+dbr:Robert_Zemeckis a :Director , foaf:Person ;
+    rdfs:label "Robert Zemeckis"@en ;
+    :fullName "Robert Zemeckis" ;
+    :dateOfBirth "1952-05-14"^^xsd:date ;
+    :gender "male" .
+
+dbr:James_Cameron a :Director , foaf:Person ;
+    rdfs:label "James Cameron"@en ;
+    :fullName "James Cameron" ;
+    :dateOfBirth "1954-08-16"^^xsd:date ;
+    :gender "male" .
+
+dbr:Denis_Villeneuve a :Director , foaf:Person ;
+    rdfs:label "Denis Villeneuve"@en ;
+    :fullName "Denis Villeneuve" ;
+    :dateOfBirth "1967-10-03"^^xsd:date ;
+    :gender "male" .
+
+dbr:Joel_Coen a :Director , foaf:Person ;
+    rdfs:label "Joel Coen"@en ;
+    :fullName "Joel Coen" ;
+    :dateOfBirth "1954-11-29"^^xsd:date ;
+    :gender "male" .
+
+dbr:Wes_Anderson a :Director , foaf:Person ;
+    rdfs:label "Wes Anderson"@en ;
+    :fullName "Wes Anderson" ;
+    :dateOfBirth "1969-05-01"^^xsd:date ;
+    :gender "male" .
+
+dbr:Alfonso_Cuarón a :Director , foaf:Person ;
+    rdfs:label "Alfonso Cuarón"@en ;
+    :fullName "Alfonso Cuarón" ;
+    :dateOfBirth "1961-11-28"^^xsd:date ;
+    :gender "male" .
+
+dbr:Darren_Aronofsky a :Director , foaf:Person ;
+    rdfs:label "Darren Aronofsky"@en ;
+    :fullName "Darren Aronofsky" ;
+    :dateOfBirth "1969-02-12"^^xsd:date ;
+    :gender "male" .
+
+dbr:Paul_Thomas_Anderson a :Director , foaf:Person ;
+    rdfs:label "Paul_Thomas Anderson"@en ;
+    :fullName "Paul_Thomas Anderson" ;
+    :dateOfBirth "1970-06-26"^^xsd:date ;
+    :gender "male" .
+
+dbr:Guillermo_del_Toro a :Director , foaf:Person ;
+    rdfs:label "Guillermo del_Toro"@en ;
+    :fullName "Guillermo del_Toro" ;
+    :dateOfBirth "1964-10-09"^^xsd:date ;
+    :gender "male" .
+
+dbr:Bong_Joon-ho a :Director , foaf:Person ;
+    rdfs:label "Bong Joon-ho"@en ;
+    :fullName "Bong Joon-ho" ;
+    :dateOfBirth "1969-09-14"^^xsd:date ;
+    :gender "male" .
+
+dbr:Sidney_Lumet a :Director , foaf:Person ;
+    rdfs:label "Sidney Lumet"@en ;
+    :fullName "Sidney Lumet" ;
+    :dateOfBirth "1924-06-25"^^xsd:date ;
+    :gender "male" .
+
+dbr:Michael_Curtiz a :Director , foaf:Person ;
+    rdfs:label "Michael Curtiz"@en ;
+    :fullName "Michael Curtiz" ;
+    :dateOfBirth "1886-12-24"^^xsd:date ;
+    :gender "male" .
+
+dbr:Alfred_Hitchcock a :Director , foaf:Person ;
+    rdfs:label "Alfred Hitchcock"@en ;
+    :fullName "Alfred Hitchcock" ;
+    :dateOfBirth "1899-08-13"^^xsd:date ;
+    :gender "male" .
+
+dbr:George_Lucas a :Director , foaf:Person ;
+    rdfs:label "George Lucas"@en ;
+    :fullName "George Lucas" ;
+    :dateOfBirth "1944-05-14"^^xsd:date ;
+    :gender "male" .
+
+dbr:Irvin_Kershner a :Director , foaf:Person ;
+    rdfs:label "Irvin Kershner"@en ;
+    :fullName "Irvin Kershner" ;
+    :dateOfBirth "1923-04-29"^^xsd:date ;
+    :gender "male" .
+
+dbr:Richard_Marquand a :Director , foaf:Person ;
+    rdfs:label "Richard Marquand"@en ;
+    :fullName "Richard Marquand" ;
+    :dateOfBirth "1937-09-22"^^xsd:date ;
+    :gender "male" .
+
+
+###############################################
+# Actors (Persons)
+###############################################
+
+dbr:Leonardo_DiCaprio a :Actor , foaf:Person ;
+    rdfs:label "Leonardo DiCaprio"@en ;
+    :fullName "Leonardo DiCaprio" ;
+    :dateOfBirth "1974-11-11"^^xsd:date ;
+    :gender "male" .
+
+dbr:Tom_Hanks a :Actor , foaf:Person ;
+    rdfs:label "Tom Hanks"@en ;
+    :fullName "Tom Hanks" ;
+    :dateOfBirth "1956-07-09"^^xsd:date ;
+    :gender "male" .
+
+dbr:Brad_Pitt a :Actor , foaf:Person ;
+    rdfs:label "Brad Pitt"@en ;
+    :fullName "Brad Pitt" ;
+    :dateOfBirth "1963-12-18"^^xsd:date ;
+    :gender "male" .
+
+dbr:Morgan_Freeman a :Actor , foaf:Person ;
+    rdfs:label "Morgan Freeman"@en ;
+    :fullName "Morgan Freeman" ;
+    :dateOfBirth "1937-06-01"^^xsd:date ;
+    :gender "male" .
+
+dbr:Al_Pacino a :Actor , foaf:Person ;
+    rdfs:label "Al Pacino"@en ;
+    :fullName "Al Pacino" ;
+    :dateOfBirth "1940-04-25"^^xsd:date ;
+    :gender "male" .
+
+dbr:Robert_De_Niro a :Actor , foaf:Person ;
+    rdfs:label "Robert De_Niro"@en ;
+    :fullName "Robert De_Niro" ;
+    :dateOfBirth "1943-08-17"^^xsd:date ;
+    :gender "male" .
+
+dbr:Marlon_Brando a :Actor , foaf:Person ;
+    rdfs:label "Marlon Brando"@en ;
+    :fullName "Marlon Brando" ;
+    :dateOfBirth "1924-04-03"^^xsd:date ;
+    :gender "male" .
+
+dbr:Christian_Bale a :Actor , foaf:Person ;
+    rdfs:label "Christian Bale"@en ;
+    :fullName "Christian Bale" ;
+    :dateOfBirth "1974-01-30"^^xsd:date ;
+    :gender "male" .
+
+dbr:Heath_Ledger a :Actor , foaf:Person ;
+    rdfs:label "Heath Ledger"@en ;
+    :fullName "Heath Ledger" ;
+    :dateOfBirth "1979-04-04"^^xsd:date ;
+    :gender "male" .
+
+dbr:Samuel_L_Jackson a :Actor , foaf:Person ;
+    rdfs:label "Samuel_L. Jackson"@en ;
+    :fullName "Samuel_L. Jackson" ;
+    :dateOfBirth "1948-12-21"^^xsd:date ;
+    :gender "male" .
+
+dbr:Matt_Damon a :Actor , foaf:Person ;
+    rdfs:label "Matt Damon"@en ;
+    :fullName "Matt Damon" ;
+    :dateOfBirth "1970-10-08"^^xsd:date ;
+    :gender "male" .
+
+dbr:Johnny_Depp a :Actor , foaf:Person ;
+    rdfs:label "Johnny Depp"@en ;
+    :fullName "Johnny Depp" ;
+    :dateOfBirth "1963-06-09"^^xsd:date ;
+    :gender "male" .
+
+dbr:Denzel_Washington a :Actor , foaf:Person ;
+    rdfs:label "Denzel Washington"@en ;
+    :fullName "Denzel Washington" ;
+    :dateOfBirth "1954-12-28"^^xsd:date ;
+    :gender "male" .
+
+dbr:Harrison_Ford a :Actor , foaf:Person ;
+    rdfs:label "Harrison Ford"@en ;
+    :fullName "Harrison Ford" ;
+    :dateOfBirth "1942-07-13"^^xsd:date ;
+    :gender "male" .
+
+dbr:Russell_Crowe a :Actor , foaf:Person ;
+    rdfs:label "Russell Crowe"@en ;
+    :fullName "Russell Crowe" ;
+    :dateOfBirth "1964-04-07"^^xsd:date ;
+    :gender "male" .
+
+dbr:Keanu_Reeves a :Actor , foaf:Person ;
+    rdfs:label "Keanu Reeves"@en ;
+    :fullName "Keanu Reeves" ;
+    :dateOfBirth "1964-09-02"^^xsd:date ;
+    :gender "male" .
+
+dbr:Will_Smith a :Actor , foaf:Person ;
+    rdfs:label "Will Smith"@en ;
+    :fullName "Will Smith" ;
+    :dateOfBirth "1968-09-25"^^xsd:date ;
+    :gender "male" .
+
+dbr:Tom_Cruise a :Actor , foaf:Person ;
+    rdfs:label "Tom Cruise"@en ;
+    :fullName "Tom Cruise" ;
+    :dateOfBirth "1962-07-03"^^xsd:date ;
+    :gender "male" .
+
+dbr:Edward_Norton a :Actor , foaf:Person ;
+    rdfs:label "Edward Norton"@en ;
+    :fullName "Edward Norton" ;
+    :dateOfBirth "1969-08-18"^^xsd:date ;
+    :gender "male" .
+
+dbr:Jack_Nicholson a :Actor , foaf:Person ;
+    rdfs:label "Jack Nicholson"@en ;
+    :fullName "Jack Nicholson" ;
+    :dateOfBirth "1937-04-22"^^xsd:date ;
+    :gender "male" .
+
+dbr:Mark_Wahlberg a :Actor , foaf:Person ;
+    rdfs:label "Mark Wahlberg"@en ;
+    :fullName "Mark Wahlberg" ;
+    :dateOfBirth "1971-06-05"^^xsd:date ;
+    :gender "male" .
+
+dbr:Uma_Thurman a :Actor , foaf:Person ;
+    rdfs:label "Uma Thurman"@en ;
+    :fullName "Uma Thurman" ;
+    :dateOfBirth "1970-04-29"^^xsd:date ;
+    :gender "female" .
+
+dbr:Scarlett_Johansson a :Actor , foaf:Person ;
+    rdfs:label "Scarlett Johansson"@en ;
+    :fullName "Scarlett Johansson" ;
+    :dateOfBirth "1984-11-22"^^xsd:date ;
+    :gender "female" .
+
+dbr:Natalie_Portman a :Actor , foaf:Person ;
+    rdfs:label "Natalie Portman"@en ;
+    :fullName "Natalie Portman" ;
+    :dateOfBirth "1981-06-09"^^xsd:date ;
+    :gender "female" .
+
+dbr:Cate_Blanchett a :Actor , foaf:Person ;
+    rdfs:label "Cate Blanchett"@en ;
+    :fullName "Cate Blanchett" ;
+    :dateOfBirth "1969-05-14"^^xsd:date ;
+    :gender "female" .
+
+dbr:Meryl_Streep a :Actor , foaf:Person ;
+    rdfs:label "Meryl Streep"@en ;
+    :fullName "Meryl Streep" ;
+    :dateOfBirth "1949-06-22"^^xsd:date ;
+    :gender "female" .
+
+dbr:Kate_Winslet a :Actor , foaf:Person ;
+    rdfs:label "Kate Winslet"@en ;
+    :fullName "Kate Winslet" ;
+    :dateOfBirth "1975-10-05"^^xsd:date ;
+    :gender "female" .
+
+dbr:Sigourney_Weaver a :Actor , foaf:Person ;
+    rdfs:label "Sigourney Weaver"@en ;
+    :fullName "Sigourney Weaver" ;
+    :dateOfBirth "1949-10-08"^^xsd:date ;
+    :gender "female" .
+
+dbr:Arnold_Schwarzenegger a :Actor , foaf:Person ;
+    rdfs:label "Arnold Schwarzenegger"@en ;
+    :fullName "Arnold Schwarzenegger" ;
+    :dateOfBirth "1947-07-30"^^xsd:date ;
+    :gender "male" .
+
+dbr:Sylvester_Stallone a :Actor , foaf:Person ;
+    rdfs:label "Sylvester Stallone"@en ;
+    :fullName "Sylvester Stallone" ;
+    :dateOfBirth "1946-07-06"^^xsd:date ;
+    :gender "male" .
+
+
+###############################################
+# Genres
+###############################################
+
+dbr:Action a :Genre ;
+    rdfs:label "Action"@en .
+
+dbr:Adventure a :Genre ;
+    rdfs:label "Adventure"@en .
+
+dbr:Comedy a :Genre ;
+    rdfs:label "Comedy"@en .
+
+dbr:Crime a :Genre ;
+    rdfs:label "Crime"@en .
+
+dbr:Drama a :Genre ;
+    rdfs:label "Drama"@en .
+
+dbr:Fantasy a :Genre ;
+    rdfs:label "Fantasy"@en .
+
+dbr:Horror a :Genre ;
+    rdfs:label "Horror"@en .
+
+dbr:Mystery a :Genre ;
+    rdfs:label "Mystery"@en .
+
+dbr:Romance a :Genre ;
+    rdfs:label "Romance"@en .
+
+dbr:Science_Fiction a :Genre ;
+    rdfs:label "Science_Fiction"@en .
+
+dbr:Thriller a :Genre ;
+    rdfs:label "Thriller"@en .
+
+dbr:War a :Genre ;
+    rdfs:label "War"@en .
+
+dbr:Western a :Genre ;
+    rdfs:label "Western"@en .
+
+dbr:Biography a :Genre ;
+    rdfs:label "Biography"@en .
+
+dbr:Historical a :Genre ;
+    rdfs:label "Historical"@en .
+
+dbr:Superhero a :Genre ;
+    rdfs:label "Superhero"@en .
+
+dbr:Psychological a :Genre ;
+    rdfs:label "Psychological"@en .
+
+dbr:Family a :Genre ;
+    rdfs:label "Family"@en .
+
+
+###############################################
+# Film Studios
+###############################################
+
+dbr:Warner_Bros a :FilmStudio ;
+    rdfs:label "Warner Bros. Entertainment Inc."@en ;
+    :establishedDate "1923-04-04"^^xsd:date .
+
+dbr:Paramount_Pictures a :FilmStudio ;
+    rdfs:label "Paramount Pictures Corporation"@en ;
+    :establishedDate "1912-05-08"^^xsd:date .
+
+dbr:Universal_Pictures a :FilmStudio ;
+    rdfs:label "Universal Pictures"@en ;
+    :establishedDate "1912-04-30"^^xsd:date .
+
+dbr:20th_Century_Fox a :FilmStudio ;
+    rdfs:label "20th Century Fox Film Corporation"@en ;
+    :establishedDate "1935-05-31"^^xsd:date .
+
+dbr:Columbia_Pictures a :FilmStudio ;
+    rdfs:label "Columbia Pictures Industries Inc."@en ;
+    :establishedDate "1924-01-10"^^xsd:date .
+
+dbr:New_Line_Cinema a :FilmStudio ;
+    rdfs:label "New Line Cinema Corporation"@en ;
+    :establishedDate "1967-01-01"^^xsd:date .
+
+dbr:Miramax a :FilmStudio ;
+    rdfs:label "Miramax Films"@en ;
+    :establishedDate "1979-01-01"^^xsd:date .
+
+dbr:DreamWorks a :FilmStudio ;
+    rdfs:label "DreamWorks Pictures"@en ;
+    :establishedDate "1994-10-12"^^xsd:date .
+
+dbr:Fox_Searchlight_Pictures a :FilmStudio ;
+    rdfs:label "Fox Searchlight Pictures"@en ;
+    :establishedDate "1994-01-01"^^xsd:date .
+
+dbr:Buena_Vista_Pictures a :FilmStudio ;
+    rdfs:label "Buena Vista Pictures Distribution"@en ;
+    :establishedDate "1953-01-01"^^xsd:date .
+
+dbr:The_Weinstein_Company a :FilmStudio ;
+    rdfs:label "The Weinstein Company"@en ;
+    :establishedDate "2005-01-01"^^xsd:date .
+
+dbr:United_Artists a :FilmStudio ;
+    rdfs:label "United Artists Corporation"@en ;
+    :establishedDate "1919-02-05"^^xsd:date .
+
+dbr:Gramercy_Pictures a :FilmStudio ;
+    rdfs:label "Gramercy Pictures"@en ;
+    :establishedDate "1992-01-01"^^xsd:date .
+
+dbr:TriStar_Pictures a :FilmStudio ;
+    rdfs:label "TriStar Pictures"@en ;
+    :establishedDate "1982-01-01"^^xsd:date .
+
+dbr:Orion_Pictures a :FilmStudio ;
+    rdfs:label "Orion Pictures Corporation"@en ;
+    :establishedDate "1978-01-01"^^xsd:date .
+
+dbr:Artisan_Entertainment a :FilmStudio ;
+    rdfs:label "Artisan Entertainment"@en ;
+    :establishedDate "1997-01-01"^^xsd:date .
+
+dbr:Paramount_Vantage a :FilmStudio ;
+    rdfs:label "Paramount Vantage"@en ;
+    :establishedDate "2006-01-01"^^xsd:date .
+
+dbr:Focus_Features a :FilmStudio ;
+    rdfs:label "Focus Features"@en ;
+    :establishedDate "2002-01-01"^^xsd:date .
+
+dbr:CJ_Entertainment a :FilmStudio ;
+    rdfs:label "CJ Entertainment"@en ;
+    :establishedDate "1995-01-01"^^xsd:date .
+
+
+### Q14 - Domain reasoning
+:wonOscarIn rdfs:domain :OscarWinner .
+dbr:Russell_Crowe :wonOscarIn dbr:Gladiator .
+dbr:Daniel_Day-Lewis :wonOscarIn dbr:There_Will_Be_Blood .
+dbr:Marlon_Brando :wonOscarIn dbr:The_Godfather .
+
+
+
+### Q15 - Subproperty reasoning
+dbo:Director rdfs:subPropertyOf dbo:Film_Production_Roles .
+dbo:Composer rdfs:subPropertyOf dbo:Film_Production_Roles .
+dbo:ScriptWriter rdfs:subPropertyOf dbo:Film_Production_Roles .
+
+### Q16 - Subclass reasoning
+dbo:Horror rdfs:subClassOf :Film .
+dbr:The_Shining a dbo:Horror .
+dbr:The_Shining rdfs:label "The Shining"@en .
+
+dbr:The_Conjuring a dbo:Horror .
+dbr:The_Conjuring rdfs:label "The Conjuring"@en .
+

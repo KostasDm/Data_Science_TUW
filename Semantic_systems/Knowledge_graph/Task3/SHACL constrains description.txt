@@ -1,0 +1,42 @@
+SHACL constrains description
+
+For all the defined property constraints, messages were added to provide clear instructions and feedback for data errors.
+
+1) ComposerShape
+
+Three properties shapes have been defined:
+ a) Pattern constraint for lastName. This ensures the last name starts with a capital letter and the subsequent letters are small and not numbers nor expressions.
+ b) Minimum length for firstName. It satisfies that there is no empty first name entry.
+ c) Minimum/Maximum inclusive for age. With this constrain, the age is ensured to get realistic values between 0 and 110.
+
+
+2) ConcertShape
+
+The three defined properties are:
+ a) Minimum length for title. It ensures titles take a meaningful string.
+ b) maxCount for title. It ensures that the titles are unique per concerts.
+ c) Maximum length for description. Sets a limit to description string and prevents from inserting a long description in the data.
+
+
+3) EventShape
+
+The three defined property shapes are:
+  a) Max inclusive for eventDate. Ensures that events are not set beyond year 2050.
+  b) Min/Max inclusive for eventTime. With this constraint, the events occur within a reasonable daily time frame (6 AM – 12 AM).
+  c) Class and node constraint for eventOfConcert. Thus, each event is associated with exactly one concert.
+
+4) MusicianShape
+
+The used property shapes are:
+ a) Min/Max count for id. Though this constrain, each musician gets exactly one unique ID.
+ b) Pattern for lastName. It ensures that names contain only letters (no numbers or symbols).
+ c) Min length for firstName. Sets a constraint, so first names can not be empty.
+
+5) ProgramEntryShape
+
+The following property shapes have been:
+ a+b) MinCount for inConcert and ofTrack. It ensures that each program entry is linked to at least one concert and one track.
+ c) Min inclusive for position. The position in the program must be at least 1.
+
+ In addition:
+  Logical constraint with sh:add. With that logical constraint, both inConcert and ofTrack constraints must be true simultaneously.

@@ -1,0 +1,4 @@
+<http://example.org/music-ontology/Instrument/1>,"Violin"^^xsd:string
+<http://example.org/music-ontology/Instrument/2>,"Viola"^^xsd:string
+<http://example.org/music-ontology/Instrument/3>,"Cello"^^xsd:string
+<http://example.org/music-ontology/Instrument/4>,"Flute"^^xsd:string

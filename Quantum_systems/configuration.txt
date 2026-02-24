@@ -1,0 +1,14 @@
+Operating System:
+
+OS Name:                       Microsoft Windows 11 Pro
+OS Version:                    10.0.26100 N/A Build 26100
+
+
+Python version:
+
+Python 3.10.11
+
+CPU model:
+
+CPU: AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD
+CPU cores: 16

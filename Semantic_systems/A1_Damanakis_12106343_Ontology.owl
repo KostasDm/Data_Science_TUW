@@ -1,0 +1,1059 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#"
+     xml:base="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/A1_Damanakis_12106343"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#exertsGravityOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#exertsGravityOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <rdfs:comment>A celestial body exerts gravity on another celestial body (e.g Sun to earth)</rdfs:comment>
+        <rdfs:label>exertsGravityOn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#hasPlanet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#hasPlanet">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#isPlanetOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+        <rdfs:comment>A system or celestial body (e.g star) has planet</rdfs:comment>
+        <rdfs:label>hasPlanet</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#hasSatelite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#hasSatelite">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#isSateliteOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Satelite"/>
+        <rdfs:comment>A planet has satellite(s)</rdfs:comment>
+        <rdfs:label>hasSatellite</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#hasStar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#hasStar">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#isStarOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Star"/>
+        <rdfs:comment>A system (planet or planetary system) that has a star</rdfs:comment>
+        <rdfs:label>hasStar</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#isPlanetOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#isPlanetOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <rdfs:comment>A planet belongs to a planetary system or is planet of a star</rdfs:comment>
+        <rdfs:label>isPlanetOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#isSateliteOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#isSateliteOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Satelite"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+        <rdfs:comment>A satellite that is orbiting around of another body.</rdfs:comment>
+        <rdfs:label>isSatelliteOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#isStarOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#isStarOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Star"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <rdfs:comment>A star that belongs to a system</rdfs:comment>
+        <rdfs:label>isStarOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#orbitsPlanet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#orbitsPlanet">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Satelite"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+        <rdfs:comment>A satelite orbits around a planet</rdfs:comment>
+        <rdfs:label>orbitsPlanet</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#orbitsaround -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#orbitsaround">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Star"/>
+        <rdfs:comment>A celestial body such as planet orbits around a star</rdfs:comment>
+        <rdfs:label>orbitsStar</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Density -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Density">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>unit of density in g/cm3</rdfs:comment>
+        <rdfs:label>hasDensity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Distance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Distance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Distance in AU, where 1 AU = 1.5E11 m</rdfs:comment>
+        <rdfs:label>Distance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Earth_Mass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Earth_Mass">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>mass unit in terms of earth mass (M = 5.87E24)</rdfs:comment>
+        <rdfs:label>EarthMass</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Mass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Mass">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>unit is solar mass that equals to approx 2E30 kg
+1 solar mass = 3.3E5 times earth mass</rdfs:comment>
+        <rdfs:label>SolarMass</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#NumberOfPlanets -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#NumberOfPlanets">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#PlanetarySystem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Number of planets that are included in a planetary system</rdfs:comment>
+        <rdfs:label>hasNumberOfPlanets</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#NumberOfStars -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#NumberOfStars">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#PlanetarySystem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Number of stars that are included in a planetary system</rdfs:comment>
+        <rdfs:label>hasNumberOfStars</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Radius -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Radius">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>radius in meters</rdfs:comment>
+        <rdfs:label>Radius</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Temperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Temperature">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Temperature in Kelvin [K]</rdfs:comment>
+        <rdfs:label>hasTemperature</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#hasBrightness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#hasBrightness">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Star"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>This refers to luminosity of the star, typically in Watts</rdfs:comment>
+        <rdfs:label>hasBrightness</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#orbitalPeriod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#orbitalPeriod">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>orbit in days</rdfs:comment>
+        <rdfs:label>orbitalPeriod</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#surfaceGravity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#surfaceGravity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>surface gravity that a celestial body exerts on an orbiting object around it. 
+Unit is: log10(cm/s^2)</rdfs:comment>
+        <rdfs:label>surfaceGravity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Asteroid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Asteroid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#orbitsaround"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Star"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Radius"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">600000.0</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Satelite"/>
+        <rdfs:comment>Asteroid is a celestial object that is essentialy a debris travelling through space. An asteroid can not be as large as a planet, a valid upper limit of its radius is about 500 km. Since we have only data about asteroids entering our solar system, this will be a solar-system centered case. An asteroid orbits the sun which differentiates it from a satellite that orbits a planet.</rdfs:comment>
+        <rdfs:label>Asteroid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject">
+        <rdfs:comment>Celestial object is defined any body in the universe, from planets and stars to galaxies and black holes.</rdfs:comment>
+        <rdfs:label>CelestialObject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#DwarfPlanet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#DwarfPlanet">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Earth_Mass"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.01</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+        <rdfs:comment>Dwarf Planet is the one that has a mass &lt; 0.01 times the earth mass</rdfs:comment>
+        <rdfs:label>DwarfPlanet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#GasGiant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#GasGiant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Earth_Mass"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+        <rdfs:comment>Gas giant planet has a mass more than 50 times the mass of the earth.</rdfs:comment>
+        <rdfs:label>GasGiant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#IceGiant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#IceGiant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Earth_Mass"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Earth_Mass"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+        <rdfs:comment>Ice giant is a planet with mass between 10 to 50 times the mass of the earth,</rdfs:comment>
+        <rdfs:label>IceGiant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Icy_satelite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Icy_satelite">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Satelite"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Density"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.1</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Satelite"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Iron_satelite"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Rocky_satelite"/>
+        <rdfs:comment>A satellite consists predominantly of ice if its density is up to 1 g/cm3</rdfs:comment>
+        <rdfs:label>Ice_satellite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#IntermediateStar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#IntermediateStar">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Star"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Mass"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Mass"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Star"/>
+        <rdfs:comment>Intermediate stars are those like the Sune that have a mass between ~ 0.5 to 2 times the solar mass.</rdfs:comment>
+        <rdfs:label>IntermediateStar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Iron_satelite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Iron_satelite">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Satelite"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Density"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Satelite"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Rocky_satelite"/>
+        <rdfs:comment>A satellite consists of iron/metal if its density is in the order of ~ 8 g/cm3. For this example, we consider a lower limit of 3,5 g/cm3, although the boundaries are in reality not so strictly-defined.</rdfs:comment>
+        <rdfs:label>Iron_satellite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#MassiveStar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#MassiveStar">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Star"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Mass"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Star"/>
+        <rdfs:comment>In principle all stars that have a mass larger than 8 times the solar mass</rdfs:comment>
+        <rdfs:label>MassiveStar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#MultipleStarSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#MultipleStarSystem">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#PlanetarySystem"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#NumberOfStars"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#PlanetarySystem"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#2-StarSystem"/>
+        <rdfs:comment>A planetary system including multiple stars</rdfs:comment>
+        <rdfs:label>MultipleStarSystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#NoThreat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#NoThreat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Asteroid"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Distance"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.05</xsd:minExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Radius"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">75.0</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Asteroid"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#PotentialThreat"/>
+        <rdfs:comment>A meteorite is no threat if its radius &lt; 75m or its distance relative to earth is larger than 0.05 AU. This definition is &quot;earth-centered&quot; and is not exactly valid for other planets due to different gravitational field.</rdfs:comment>
+        <rdfs:label>Nothreat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#orbitsaround"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Star"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Earth_Mass"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">26400.0</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Satelite"/>
+        <rdfs:comment>A planet is a celestial body with mass that can range up to 26400 times the earth mass (0r 0.08 times the solar mass). This will be used as the criterion to classify a celestial body as a planet, based on its mass</rdfs:comment>
+        <rdfs:label>Planet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#PlanetarySystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#PlanetarySystem">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#hasPlanet"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#hasStar"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Star"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <rdfs:comment>A system that includes stars with or without planets</rdfs:comment>
+        <rdfs:label>PlanetarySystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#PotentialThreat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#PotentialThreat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Asteroid"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Distance"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.05</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Radius"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">75.0</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Asteroid"/>
+        <rdfs:comment>A meteorite is a threat to earth if its relative distance is smaller than 0.05 AU and its radius is larger than 75 m. This definition is &quot;earth-centered&quot; and is not exactly valid for other planets due to different gravitational field.</rdfs:comment>
+        <rdfs:label>PotentialThreat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#RedDwarf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#RedDwarf">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Star"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Mass"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Star"/>
+        <rdfs:comment>Red Dwarfs are those stars with mass about 0.5 times the solar mass or less</rdfs:comment>
+        <rdfs:label>RedDwarf</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Rocky_satelite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Rocky_satelite">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Satelite"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Density"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.1</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Density"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Satelite"/>
+        <rdfs:comment>A satellite consists predominantly of rock if its density is larger than 1 g/cm3 and smaller than ~ 3.5 g/cm3.</rdfs:comment>
+        <rdfs:label>Rocky_satellite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Satelite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Satelite">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#isSateliteOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#orbitsPlanet"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <rdfs:comment>A satellite is essentially a celestial body orbiting a planet (e.g moon). A satellite orbits only one planet!</rdfs:comment>
+        <rdfs:label>Satellite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Star -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Star">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#exertsGravityOn"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Mass"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.08</xsd:minExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#CelestialObject"/>
+        <rdfs:comment>Star is defined as the celestial body with minimum mass about 0.08 times the solar mass. This is an important condition for the nuclear fussion to happen which is the process through which heat and light is generated.</rdfs:comment>
+        <rdfs:label>Star</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#SuperEarth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#SuperEarth">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Earth_Mass"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Earth_Mass"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+        <rdfs:comment>Planets with mass between 2 to 10 times the earth mass</rdfs:comment>
+        <rdfs:label>SuperEarth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#TerrestrialPlanet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#TerrestrialPlanet">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Earth_Mass"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.01</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Earth_Mass"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Planet"/>
+        <rdfs:comment>Terrestrial planet has a mass between 0.01 to 2 times the earth mass</rdfs:comment>
+        <rdfs:label>TerrestrialPlanet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#YellowDwarf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#YellowDwarf">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Star"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Mass"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Mass"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#Star"/>
+        <rdfs:comment>this is where our sun belongs to, as well as any star with a mass of 0.8 to 2 times the solar mass</rdfs:comment>
+        <rdfs:label>YellowDwarf</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#1-StarSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#1-StarSystem">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#NumberOfStars"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#PlanetarySystem"/>
+        <rdfs:comment>A planetary system including only one star</rdfs:comment>
+        <rdfs:label>1-StarSystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#2-StarSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#2-StarSystem">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#NumberOfStars"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#PlanetarySystem"/>
+        <rdfs:comment>A planetary system including two stars</rdfs:comment>
+        <rdfs:label>2-StarSystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#MultipleStarSystem"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#1-StarSystem"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kostas/ontologies/2025/solarsystem#2-StarSystem"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

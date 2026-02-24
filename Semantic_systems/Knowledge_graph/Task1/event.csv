@@ -1,0 +1,4 @@
+<http://example.org/music-ontology/Event/2>,"17:00:00"^^xsd:time,"2023-01-21"^^xsd:date,<http://example.org/music-ontology/Concert/241425>,<http://example.org/music-ontology/Theater/272800>,<http://example.org/music-ontology/Orchestra/1502>
+<http://example.org/music-ontology/Event/3>,"10:54:00"^^xsd:time,"2013-08-04"^^xsd:date,<http://example.org/music-ontology/Concert/210237>,<http://example.org/music-ontology/Theater/100526>,<http://example.org/music-ontology/Orchestra/239>
+<http://example.org/music-ontology/Event/4>,"16:24:00"^^xsd:time,"2008-05-17"^^xsd:date,<http://example.org/music-ontology/Concert/5544>,<http://example.org/music-ontology/Theater/167030>,<http://example.org/music-ontology/Orchestra/1731>
+<http://example.org/music-ontology/Event/5>,"13:59:00"^^xsd:time,"2008-05-27"^^xsd:date,<http://example.org/music-ontology/Concert/192014>,<http://example.org/music-ontology/Theater/1147>,<http://example.org/music-ontology/Orchestra/1217>

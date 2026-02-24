@@ -1,0 +1,182 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ex: <http://example.org/music-ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+ex:ComposerShape rdf:type sh:NodeShape .
+ex:ComposerShape sh:targetClass ex:Composer .
+
+ex:ComposerShape sh:property [
+                   rdf:type sh:PropertyShape ;
+                   sh:path ex:lastName ;
+                   sh:datatype xsd:string ;
+                   sh:pattern "^[A-Z][a-zA-Z]+$" ;
+                   sh:message "Composer last name must start with a capital letter and contain at least one small letter." ;
+                   ] .
+
+ex:ComposerShape sh:property [
+                   rdf:type sh:PropertyShape ;
+                   sh:path ex:lastName ;
+                   sh:datatype xsd:string ;
+                   sh:pattern "^[A-Z][a-zA-Z]+$" ;
+                   sh:message "Composer last name must start with a capital letter and contain at least one small letter." ;
+                   ] .
+
+ex:ComposerShape sh:property [
+                   rdf:type sh:PropertyShape ;
+                   sh:path ex:firstName ;
+                   sh:datatype xsd:string ;
+                   sh:minLength 1 ;
+                   sh:message "Composer first name must have at least one character." ;
+                   ] .
+
+
+ex:ComposerShape sh:property [
+                   rdf:type sh:PropertyShape ;
+                   sh:path ex:age ;
+                   sh:datatype xsd:integer ;
+                   sh:minInclusive 0 ;
+                   sh:maxInclusive 110 ;
+                   sh:message "Composer age must be between 0 and 110." ;
+                   ] .
+
+
+ex:ConcertShape rdf:type sh:NodeShape .
+ex:ConcertShape sh:targetClass :Concert .
+
+
+ConcertShape sh:property [
+                 rdf:type sh:PropertyShape ;
+                 sh:path ex:title ;
+                 sh:datatype xsd:string ;
+                 sh:minLength 2 ;
+                 sh:message "Concert title must be at least 2 characters long." ;
+                ] .
+
+ConcertShape sh:property [
+                rdf:type sh:PropertyShape ;
+                sh:path ex:description ;
+                sh:datatype xsd:string ;
+                sh:maxLength 1000 ;
+                sh:message "Concert description must have maximum 1000 characters." ;
+               ] .
+
+ConcertShape sh:property [
+              rdf:type sh:PropertyShape ;
+              sh:path ex:title ;
+              sh:maxCount 1 ;
+              sh:message "Concert must have only one title." ;
+             ] .
+
+
+
+ex:EventShape rdf:type sh:NodeShape .
+ex:EventShape sh:targetClass ex:Event .
+
+ex:EventShape sh:property [
+            rdf:type sh:PropertyShape ;
+            sh:path ex:eventDate ;
+            sh:datatype xsd:date ;
+            sh:maxInclusive "2050-12-31"^^xsd:date ;
+            sh:message "Event date must be a earlier than 2050." ;
+           ] .
+
+
+ex:EventShape sh:property [
+            rdf:type sh:PropertyShape ;
+            sh:path ex:eventTime ;
+            sh:datatype xsd:time ;
+            sh:minInclusive "06:00:00"^^xsd:time ;
+            sh:maxInclusive "24:00:00"^^xsd:time ;
+            sh:message "Event time must be between 6:00 AM to 00:00 AM." ;
+           ] .
+
+
+ex:EventShape sh:property [
+              rdf:type sh:PropertyShape ;
+              sh:path ex:eventOfConcert ;
+              sh:class ex:Concert ;
+              sh:node ex:ConcertShape ;
+              sh:minCount 1 ;
+              sh:maxCount 1 ;
+              sh:message "Event must be connected to exactly one Concert." ;
+              ] .
+
+
+
+ex:MusicianShape rdf:type sh:NodeShape .
+ex:MusicianShape sh:targetClass ex:Musician .
+
+ex:MusicianShape sh:property [
+              rdf:type sh:PropertyShape ;
+              sh:path ex:id ;
+              sh:datatype xsd:integer ;
+              sh:minCount 1 ;
+              sh:maxCount 1 ;
+              sh:message "Musician must have exactly one ID." ;
+              ] .
+
+ex:MusicianShape sh:property [
+              rdf:type sh:PropertyShape ;
+              sh:path ex:lastName ;
+              sh:datatype xsd:string ;
+              sh:pattern "^[A-Za-z]+$" ;
+              sh:message "Musician last name must not contain numbers." ;
+             ] .
+
+ex:MusicianShape sh:property [
+               rdf:type sh:PropertyShape ;
+               sh:path ex:firstName ;
+               sh:datatype xsd:string ;
+               sh:minLength 100 ;
+               sh:message "Musician first name must not be longer than 100 characters." ;
+  ] .
+
+
+ex:ProgramEntryShape rdf:type sh:NodeShape .
+ex:ProgramEntryShape sh:targetClass ex:ProgramEntry .
+
+ex:ProgramEntryShape sh:property [
+                rdf:type sh:PropertyShape ;
+                sh:path ex:inConcert ;
+                sh:class ex:Concert ;
+                sh:minCount 1 ;
+                sh:message "Program entry should be played in at least one concert." ;
+               ] .
+
+ex:ProgramEntryShape sh:property [
+                rdf:type sh:PropertyShape ;
+                sh:path ex:inConcert ;
+                sh:class ex:Concert ;
+                sh:minCount 1 ;
+                sh:message "Program should be played in at least one concert." ;
+               ] .
+
+ex:ProgramEntryShape sh:property [
+                rdf:type sh:PropertyShape ;
+                sh:path ex:ofTrack ;
+                sh:class ex:Track ;
+                sh:minCount 1 ;
+                sh:message "Program should be feature at least one track." ;
+               ] .
+
+ex:ProgramEntryShape sh:property [
+               rdf:type sh:PropertyShape ;
+               sh:path ex:position ;
+               sh:datatype xsd:integer ;
+               sh:minInclusive 1 ;
+               sh:message "Position in the program must be at least in position 1." ;
+               ] .
+
+ex:ProgramEntryShape sh:and (
+             [
+              sh:property [
+                sh:path ex:inConcert ;
+                sh:minCount 1 ;
+             ] ;
+             sh:property [
+                sh:path ex:ofTrack ;
+                sh:minCount 1 ;
+            ]
+           ]
+         ) .

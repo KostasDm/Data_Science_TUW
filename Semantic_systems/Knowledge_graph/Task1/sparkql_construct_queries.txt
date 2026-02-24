@@ -1,0 +1,137 @@
+PREFIX ex: <http://example.org/music#>
+
+CONSTRUCT {
+   
+  ?composer a ex:Composer;
+              ex:fistName ?firstName;
+              ex:lastName ?lastName;
+              ex:name ?name .
+
+}
+WHERE{
+  
+ ?composer a ex:Composer;
+             ex:fistName ?firstName;
+             ex:lastName ?lastName;
+             ex:name ?name .
+}
+
+
+CONSTRUCT {
+   
+  ?track a ex:Track;
+           ex:title ?title .
+
+}
+WHERE{
+  
+ ?track a ex:Track;
+         ex:title ?title .
+}
+
+
+CONSTRUCT {
+   
+  ?concert a ex:Concert;
+           ex:title ?title;
+           ex:description ?description .
+
+}
+WHERE{
+  
+ ?concert a ex:Concert;
+           ex:title ?title;
+           ex:description ?description .
+}
+
+CONSTRUCT {
+   
+  ?theater a ex:Theater;
+           ex:name ?name .
+
+}
+WHERE{
+  
+ ?theater a ex:Theater;
+           ex:name ?name .
+}
+
+CONSTRUCT {
+   
+  ?event a ex:Event;
+           ex:eventDate ?eventDate;
+           ex:eventTime ?eventTime .
+
+}
+WHERE{
+  
+ ?event a ex:Event;
+          ex:eventDate ?eventDate;
+          ex:eventTime ?eventTime .
+}
+
+CONSTRUCT {
+   
+  ?programEntry a ex:ProgramEntry;
+                 ex:position ?position .
+
+}
+WHERE{
+  
+  ?programEntry a ex:ProgramEntry;
+                  ex:position ?position .
+}
+
+CONSTRUCT {
+   
+  ?orchestra a ex:Orchestra;
+               ex:conductor ?conductor;
+               ex:location ?location .
+
+}
+WHERE{
+  
+  ?orchestra a ex:Orchestra;
+               ex:conductor ?conductor;
+               ex:location ?location .
+}
+
+CONSTRUCT {
+   
+  ?instrument a ex:Instrument;
+               ex:instrumentType ?instrumentType .
+
+}
+WHERE{
+  
+   ?instrument a ex:Instrument;
+               ex:instrumentType ?instrumentType .
+}
+
+CONSTRUCT {
+   
+  ?musician a ex:Musician;
+              ex:id ?id;
+              ex:fistName ?firstName;
+              ex:lastName ?lastName;
+              ex:name ?name .
+}
+WHERE{
+  
+  ?musician a ex:Musician;
+              ex:id ?id;
+              ex:fistName ?firstName;
+              ex:lastName ?lastName;
+              ex:name ?name .
+}
+
+
+CONSTRUCT {
+   
+  ?membership a ex:membership .
+
+}
+WHERE{
+  
+   ?membership a ex:membership .
+}

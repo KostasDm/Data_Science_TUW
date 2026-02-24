@@ -1,0 +1,231 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ex: <http://example.org/music-ontology#> .
+
+
+ex:ComposerMapping a rr:TriplesMap ;
+  rr:logicalTable [ rr:tableName "composer"] ;
+  rr:subjectMap [
+   rr:template "http://example.org/music-ontology/Composer/{composer_id}" ;
+   rr:class ex:Composer ;
+   ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate ex:firstName ;
+    rr:objectMap [rr:column "firstName"]
+  ] ;
+
+  rr:predicateObjectMap [
+   rr:predicate ex:lastName ;
+   rr:objectMap [rr:column "lastName"]
+  ] ;
+
+  rr:predicateObjectMap [
+   rr:predicate ex:age ;
+   rr:objectMap [ rr:column "age" ]
+] ;
+
+  rr:predicateObjectMap [
+   rr:predicate ex:Name;
+   rr:objectMap [rr:column "name"]
+  ] .
+
+
+ex:TrackMapping a rr:TriplesMap;
+  rr:logicalTable [rr:tableName "track"];
+  rr:subjectMap [
+   rr:template "http://example.org/music-ontology/Track/{track_id}" ;
+   rr:class ex:Track ;
+  ];
+
+
+  rr:predicateObjectMap[
+   rr:predicate ex:title;
+   rr:objectMap [rr:column "title"]
+   ] .
+
+
+ex:ConcertMapping a rr:TriplesMap;
+  rr:logicalTable [rr:tableName "concert"];
+  rr:subjectMap [
+   rr:template "http://example.org/music-ontology/Concert/{concert_id}" ;
+   rr:class ex:Concert ;
+  ];
+
+  rr:predicateObjectMap[
+   rr:predicate ex:title;
+   rr:objectMap [rr:column "title"]
+   ] ;
+
+  rr:predicateObjectMap[
+   rr:predicate ex:description;
+   rr:objectMap [rr:column "description"]
+   ] .
+
+
+ex:TheaterMapping a rr:TriplesMap;
+  rr:logicalTable [rr:tableName "theater"];
+  rr:subjectMap [
+   rr:template "http://example.org/music-ontology/Theater/{theater_id}" ;
+   rr:class ex:Theater ;
+  ];
+
+  rr:predicateObjectMap[
+   rr:predicate ex:name;
+   rr:objectMap [rr:column "name"]
+   ] .
+
+
+ex:EventMapping a rr:TriplesMap;
+  rr:logicalTable [rr:tableName "event"];
+  rr:subjectMap [
+   rr:template "http://example.org/music-ontology/Event/{event_id}" ;
+   rr:class ex:Event ;
+  ];
+
+  rr:predicateObjectMap[
+   rr:predicate ex:eventTime;
+   rr:objectMap [rr:column "eventTime"]
+   ] ;
+
+  rr:predicateObjectMap[
+   rr:predicate ex:eventDate;
+   rr:objectMap [rr:column "eventDate"]
+   ] ;
+
+  rr:predicateObjectMap[
+   rr:predicate ex:eventOfConcert;
+   rr:objectMap [rr:template "http://example.org/music-ontology/Concert/{concert_id}"]
+   ] ;
+
+  rr:predicateObjectMap[
+   rr:predicate ex:atTheater;
+   rr:objectMap [rr:template "http://example.org/music-ontology/Theater/{theater_id}"]
+   ] ;
+
+  rr:predicateObjectMap[
+   rr:predicate ex:byOrchestra;
+   rr:objectMap [rr:template "http://example.org/music-ontology/Orchestra/{orchestra_id}"]
+   ] .
+
+ex:ProgramEntryMapping a rr:TriplesMap;
+  rr:logicalTable [rr:tableName "programEntry"];
+  rr:subjectMap [
+   rr:template "http://example.org/music-ontology/ProgramEntry/{program_entry_id}" ;
+   rr:class ex:ProgramEntry ;
+   ];
+
+  rr:predicateObjectMap[
+   rr:predicate ex:position;
+   rr:objectMap [rr:column "position"]
+   ] ;
+
+  rr:predicateObjectMap[
+   rr:predicate ex:inConcert;
+   rr:objectMap [rr:template "http://example.org/music-ontology/Concert/{concert_id}"]
+   ] ;
+
+  rr:predicateObjectMap[
+   rr:predicate ex:ofTrack;
+   rr:objectMap [rr:template "http://example.org/music-ontology/Track/{track_id}"]
+   ] .
+
+
+ex:OrchestraMapping a rr:TriplesMap;
+  rr:logicalTable [rr:tableName "orchestra"];
+  rr:subjectMap [
+   rr:template "http://example.org/music-ontology/Orchestra/{orchestra_id}" ;
+   rr:class ex:Orchestra ;
+   ];
+
+  rr:predicateObjectMap[
+   rr:predicate ex:conductor;
+   rr:objectMap [rr:column "conductor"]
+   ] ; 
+
+  rr:predicateObjectMap[
+   rr:predicate ex:location;
+   rr:objectMap [rr:column "location"]
+   ] .
+
+
+ex:InstrumentMapping a rr:TriplesMap;
+  rr:logicalTable [rr:tableName "instrument"];
+  rr:subjectMap [
+   rr:template "http://example.org/music-ontology/Instrument/{instrument_id}" ;
+   rr:class ex:Instrument ;
+   ];
+
+
+  rr:predicateObjectMap[
+   rr:predicate ex:instrumentType;
+   rr:objectMap [rr:column "instrumentType"]
+   ] .
+
+
+ex:MusicianMapping a rr:TriplesMap;
+  rr:logicalTable [rr:tableName "musician"];
+  rr:subjectMap [
+   rr:template "http://example.org/music-ontology/Musician/{id}" ;
+   rr:class ex:Musician ;
+   ];
+
+
+  rr:predicateObjectMap[
+   rr:predicate ex:id;
+   rr:objectMap [
+      rr:column "id";
+      rr:datatype xsd:integer
+   ]
+   ] ;
+
+  rr:predicateObjectMap[
+   rr:predicate ex:firstName;
+   rr:objectMap [rr:column "firstName"]
+   ] ;
+
+  rr:predicateObjectMap[
+   rr:predicate ex:lastName;
+   rr:objectMap [rr:column "lastName"]
+   ] ;
+
+  rr:predicateObjectMap[
+   rr:predicate ex:name;
+   rr:objectMap [rr:column "name"]
+   ] .
+
+
+ex:MembershipMapping a rr:TriplesMap;
+  rr:logicalTable [rr:tableName "membership"];
+  rr:subjectMap [
+   rr:template "http://example.org/music-ontology/Membership/{membership_id}" ;
+   rr:class ex:Membership ;
+   ];
+
+
+  rr:predicateObjectMap[
+   rr:predicate ex:memberMusician;
+   rr:objectMap [rr:template "http://example.org/music-ontology/Musician/{musician_id}"]
+   ] ;
+
+  rr:predicateObjectMap[
+   rr:predicate ex:memberOrchestra;
+   rr:objectMap [rr:template "http://example.org/music-ontology/Orchestra/{orchestra_id}"]
+   ] ;
+
+  rr:predicateObjectMap[
+   rr:predicate ex:playsInstrument;
+   rr:objectMap [rr:template "http://example.org/music-ontology/Instrument/{instrument_id}"]
+   ] .
+
+ex:ComposerTrackMapping a rr:TriplesMap;
+  rr:logicalTable [rr:tableName "composer_track_link"] ;
+    rr:subjectMap [
+        rr:template "http://example.org/music-ontology/Composer/{composer_id}" ;
+        rr:class ex:Composer;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ex:isComposerOf;
+        rr:objectMap [
+            rr:template "http://example.org/music-ontology/Track/{track_id}"]
+    ] .
+

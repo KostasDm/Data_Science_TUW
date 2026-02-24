@@ -1,0 +1,4 @@
+<http://example.org/music-ontology/Musician/404>,"404"^^xsd:integer,"Aaron"^^xsd:string,"Gray"^^xsd:string,"Aaron Gray"^^xsd:string
+<http://example.org/music-ontology/Musician/524>,"524"^^xsd:integer,"Aaron"^^xsd:string,"Thompson"^^xsd:string,"Aaron Thompson"^^xsd:string
+<http://example.org/music-ontology/Musician/885>,"885"^^xsd:integer,"Aaron"^^xsd:string,"Horton"^^xsd:string,"Aaron Horton"^^xsd:string
+<http://example.org/music-ontology/Musician/944>,"944"^^xsd:integer,"Aaron"^^xsd:string,"Mitchell"^^xsd:string,"Aaron Mitchell"^^xsd:string
